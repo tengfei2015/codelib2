@@ -1,0 +1,22 @@
+@media(max-width: 1000px){
+    /*remove lightbox feature on mobile author:tengfei*/
+    .wpb_gallery .work-item .work-info{display:none;}
+    .wpb_gallery #portfolio .work-item > img{ width:100% !important; }
+}
+/*gallery remove spaces author:tengfei */
+body #ajax-content-wrap .wpb_gallery #portfolio > .col{ margin:0 !important; }
+@media(min-width: 1001px) {
+    .portfolio-items .col.span_3{
+        width: 24.9% !important;
+    }
+}
+@media (max-width: 1000px) and (min-width: 690px){
+	.portfolio-items:not(.carousel) .col.span_4, 
+	.portfolio-items:not(.carousel) .col.span_3 {
+	    width: 49.9%!important;
+	}
+}
+.wpb_gallery .work-item .work-info-bg{display:none;}
+#portfolio{ background:#000;margin-left:0 !important; }
+#portfolio .work-item{width:100%;}
+

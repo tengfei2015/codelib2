@@ -1,0 +1,33 @@
+table.camping-table{
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-collapse: collapse;
+  margin-bottom:1em;
+}
+table.camping-table th, 
+table.camping-table td {
+    padding: 0.5em 1em;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    white-space: pre;
+}
+  
+table.camping-table thead th, 
+table.camping-table tbody td {
+    text-align: center;
+}
+table.camping-table thead {
+    color: white;
+    background: #0cf;
+}
+table.camping-table thead tr{ background-color: transparent !important; }  
+table.camping-table thead th {
+      padding: 1em;
+}
+table.camping-table[data-comparing="active"] tbody th {
+    border-bottom: none;
+    font-size: 0.75em;
+    color: #767676;
+    padding-bottom: 0;
+}

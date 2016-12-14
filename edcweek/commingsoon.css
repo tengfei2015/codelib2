@@ -1,0 +1,41 @@
+/** Common Style **/
+.wpb_row, .wpb_content_element{ margin-bottom:0; }
+.hide{ display:none; }
+#header-title{ width: 100% !important; background: #fff; margin-bottom:15px; margin-left:0; }
+#header-title .wpb_text_column{ color: #333;text-align: center;height: 40px;line-height: 40px;font-size: 1.375em; }
+#header-img .bg-img{ background-size:cover;background-position: center center; font-size:0; }
+@media only screen and (min-width: 801px){
+    #main-content-default{ margin-bottom:15px; }
+    .vc_row.vc_row-fluid{ margin: 0 15px; background:#000; }
+    .vc_row.vc_row-fluid > .vc_col-sm-12{ float:none; max-width:1130px; margin:0 auto; margin-left:auto !important; padding: 0 3%;}
+    #header-img{ padding-top:2.5%;margin-top:15px !important;}
+    #header-img .bg-img{ width:100%; height:300px; }
+}
+@media only screen and (max-width: 800px){
+    .vc_row.vc_row-fluid{ width: 100% !important; padding:0 5%;background:#000; }
+    .vc_row .wpb_column{ margin-left:0; }
+    #header-img{ padding-top:20px; }
+    #header-img .bg-img{ width:100%; height:220px; }
+    #contactus-text { background-color: #000; }
+    #header-title { margin-bottom: 0; }
+}
+
+/**Comming Soon Page**/
+#contactus-title .edc-title h2{ color: #ee1e7c;font-size: 32px;font-weight: bold; padding: 20px 0 0; font-weight: 900; }
+#contactus-text p{ color:#888888;line-height: 25px; border-bottom: 1px solid #383838; padding-bottom: 2.5%; }
+#talent-image { padding-bottom: 20px; }
+.static-lineup a:hover { color: #fff !important; }
+@media only screen and (min-width : 801px) {
+    .hide-on-desktop{ display: none!important; }
+    .home-talent-container { padding: 20px 40px 40px; }
+    
+    #contactus-text{ padding-bottom: 2.5%; }
+    #contactus-text p{ padding:20px 0; }
+}
+@media only screen and (max-width : 800px) {
+    .hide-on-mobile{ display: none!important; }
+    #artist-list{padding-bottom: 30px;}
+    .vc_row .home-talent-container{ padding: 0; }
+    #contactus-text{padding-bottom: 30px;}    
+    #contactus-text p{ padding:15px 10px; }
+}

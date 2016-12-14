@@ -1,0 +1,72 @@
+/* Latest Pricing Table Style Updated by tengfei 2016-10-24 */
+.pricing-table[data-style="default"] { margin-top:35px; }
+.pricing-table[data-style="default"] .pricing-column h4 .dollar-sign{font-size: 30px !important;font-weight: bold !important; top: 0;}
+.pricing-table[data-style="default"] .pricing-column.highlight .nectar-button {margin: 0px 0px 10px 0px;}
+.pricing-table[data-style="default"] .pricing-column.highlight .highlight-reason{ display:none !important; }
+@media (min-width:1001px){
+	.pricing-table{ text-align:center; }
+	.pricing-table .pricing-column{ float:none; display:inline-block;}
+	.pricing-table.two-cols .pricing-column, 
+	.pricing-table.three-cols .pricing-column, 
+	.pricing-table.four-cols .pricing-column
+	{ width:25% !important; }
+	.pricing-table.equalheight .pricing-column .pricing-column-content{ min-height: 169px;padding: 0; }
+	.pricing-table .pricing-column h4{font-size: 43px!important; }
+	.pricing-table[data-style="default"] .pricing-column h4 .dollar-sign{
+		font-size: 42px !important;font-weight: bold !important; top: 0;
+	}
+	.pricing-table[data-style="default"] .pricing-column.highlight h3{ padding: 19px 0px; }
+	.pricing-table[data-style="default"] .pricing-column.highlight{ margin-top:0 !important; }
+}
+@media (max-width: 1000px){
+	.pricing-table .pricing-column{
+	    border: solid 1px #d0d2d3;
+	    text-align: left;
+	    margin-bottom: 0 !important;
+	    padding-left: 20px;
+	    position: relative;
+	}
+	.pricing-table .pricing-column h3 {
+	    padding: 5px 0 5px 25px !important;
+	    padding-bottom: 2px !important;
+	    border: none !important;
+	    margin-left: -20px;
+	}
+	.pricing-table .pricing-column .pricing-column-content {
+	    border: none !important;
+	    padding-right: 138px;
+		padding-bottom: 10px;
+	}	
+	.pricing-table > div.pricing-column:first-child .pricing-column-content, 
+	.pricing-table > div.pricing-column:first-child h3 {
+    	border-left: none!important;
+	}
+	.pricing-table .pricing-column h4 {
+	    font-size: 30px !important;
+	    padding-top: 0;
+	    padding-bottom: 0;
+	    margin-bottom: -6px !important;
+	    margin-left: -37px;
+	}
+	.pricing-table .pricing-column .interval {
+	    display: inline-block;
+	    width: auto;
+    	padding: 10px 0;
+	}
+	.pricing-table .pricing-column .nectar-button{
+		visibility: visible;
+		position: absolute;
+		right: 15px;
+		bottom: 5px;
+		top: auto;	
+	}
+	.pricing-table .pricing-column .pricing-column-content > i{ 
+		position: absolute;
+    		right: 30px;
+    		bottom: 15px;  
+	}
+	.pricing-table .pricing-column.highlight{ background-color: #1a81bc!important;}
+	.pricing-table .pricing-column.highlight .nectar-button{ background-color: #1aa06f!important; }
+	.pricing-table .pricing-column.highlight h4, 
+	.pricing-table .pricing-column.highlight .interval{ color:#fff !important; }
+}

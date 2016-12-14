@@ -1,0 +1,81 @@
+/************************************************
+New Styles Tengfei
+*/
+/*nav*/
+#header-outer.transparent header#top nav > ul > li > a{
+    color: #fff !important;
+    opacity: 1 !important
+}
+#footer-outer .widget{
+    min-height: 240px;
+}
+#footer-outer .widget ul li{
+    width: 100%;
+}
+
+#header-outer .header-logos{ 
+    display:none;
+}
+#header-outer.small-nav .header-logos{ 
+    display:block !important;
+}
+
+
+
+
+
+
+/************************************************
+Info
+*************************************************/
+/*make container full width on mobile --tengfei*/
+@media (max-width: 1000px){
+    #ajax-content-wrap .main-content, #ajax-content-wrap .footer-content{
+        max-width: none !important;
+        width: 100%;
+    }
+    #ajax-content-wrap .main-content .wpb_row:not(.xui_header_section),
+    #ajax-content-wrap .footer-content .wpb_row:not(.xui_header_section2){
+        position: relative;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+    }
+    #ajax-content-wrap .main-content .wpb_row.xui_header_section,
+    #ajax-content-wrap .footer-content .wpb_row.xui_header_section2{
+        width: 100% !important;padding-left: 0 !important; padding-right: 0 !important;
+        margin: 0 !important;
+    }
+    #ajax-content-wrap .wpb_row .text-center{
+        padding-left:5% !important;
+        padding-right:5% !important;
+        padding-top:25px !important;
+        margin:0;
+    }
+    #ajax-content-wrap .wpb_row .text-center.ul-list{
+        padding-left:2% !important;
+    }
+    #ajax-content-wrap .wpb_row .text-center:last-child,
+    #ajax-content-wrap .wpb_row .text-center.last{
+        padding-bottom:20px !important;    
+    }
+    #ajax-content-wrap .wpb_row .text-center.not-last{ padding-bottom:0 !important; }
+    #ajax-content-wrap .wpb_row:not(.xui_header_section):not(.calendar-row) .wpb_column:not(.text-center){
+        padding:0 !important; margin:0;
+    }
+    #ajax-content-wrap .wpb_row .wpb_text_column:not(.text-center){
+        padding:0px!important;margin: 0 !important;
+    }
+    
+    #ajax-content-wrap .footer-content{ background:#2b2b2b; }
+    #ajax-content-wrap .footer-content .wpb_row.socail_channels{
+        max-width: 300px;margin: 0 auto !important;
+    }
+    .wpb_row.socail_channels .col .wpb_column{
+        margin-top: 25px !important;
+    }
+    .wpb_row.socail_channels .col .wpb_column:last-child{
+        margin-bottom: 25px !important;
+    }
+}

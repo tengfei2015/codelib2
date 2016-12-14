@@ -1,0 +1,192 @@
+/**++++  ++++**/
+
+/**==========================================================================
+common use classnames
+
+full-width-content-only-mobile
+text-center
+tiers
+equal-heights-column
+==========================================================================***/
+
+
+
+/**==========================================================================
+
+Home Page
+
+==========================================================================***/
+
+
+@media (max-width:1000px){
+	/* Homepage news and announcement image white line on mobile --tengfei */
+	.slider-post-container .post-content .post-featured-img{ display:block;margin-top:-1px; }
+	.mobile-gallery-carousel{ margin-top:-1px; }
+	
+	/* homepage_essentials */
+	.homepage_essentials .portfolio-items img{ width:100% !important; }
+}
+
+
+/* keep home slider content at bottom of the screen --tengfei */
+.swiper-wrapper .home_slider > .container{height:100%;position:relative;}
+.swiper-wrapper .home_slider > .container > .content{ top:auto !important;
+    bottom: 45px; position: absolute; padding-top: 0px !important; }
+.swiper-wrapper .home_slider > .container > .content p{
+    text-shadow: 0 0 5px rgba(0,0,0, 0.8);
+}
+@media (min-width:1900px) and (max-height:950px){
+    .swiper-wrapper .home_slider > .container > .content{ bottom:85px; }
+}
+
+
+
+
+experience
+
+@media (max-width:1000px){
+    .full-width-content-only-mobile .wpb_column .wpb_text_column{ margin:0 !important; }
+    .full-width-content-only-mobile .wpb_column{ margin-bottom:0 !important; }
+    .full-width-content-only-mobile{ margin-bottom:0 !important;padding-bottom: 0 !important; }
+    .perfomers-gallery{padding:0 !important;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**==========================================================================
+
+Camping Page
+
+==========================================================================***/
+@media (max-width:1000px){
+    /* mobile text add padding --tengfei */
+    .full-width-content-only-mobile .text-center > .wpb_wrapper{
+        padding-left:10%;padding-right:10%;padding-top:20px;
+    }
+    .vc_row.tiers .col > .wpb_column{ margin-bottom:0 !important; }
+    .vc_row.tiers{ padding-bottom:0 !important; }
+    .vc_row.full-width-content .col.span_12 > .col.padding-2-percent{ padding:0 !important;}
+    .vc_row.full-width-content .text-center > .wpb_wrapper{ padding-left:10%;padding-right:10%; }
+    .vc_row.full-width-content .text-center.extrapd > .wpb_wrapper{ padding-bottom:20px;}
+    body .vc_row-fluid.wpb_column.no-margin-bottom{ margin-bottom:0; }
+}
+@media (min-width:1001px){
+   
+}
+
+/**==========================================================================
+
+Info Page
+
+==========================================================================***/
+
+#info-content .col > .wpb_column{ padding:10px; }
+#info-content .col > .wpb_column > .wpb_wrapper > .wpb_text_column:last-child{ margin-top:15px; }
+
+
+
+
+
+
+
+
+/**==========================================================================
+
+News
+
+==========================================================================***/
+@media (max-width:1000px){
+    /* remove the space between news on mobile --tengfei */
+    #post-area .posts-container article{ position:relative !important; top: 0 !important; margin-bottom:0 !important; }
+    #post-area article .post-content .post-meta{ padding-bottom: 5px !important; }
+    .blog-fullwidth-wrap #post-area.masonry{ margin-bottom:0 !important; }
+    #post-area .posts-container{ height:auto !important; }
+}
+
+
+
+
+
+
+
+
+
+
+/**==========================================================================
+
+Common
+
+==========================================================================***/
+/* remove drak overlay on image gallery */
+#portfolio .work-item .work-info-bg{ display:none !important; }
+
+/* to fix the hamburger issue  */
+#header-outer #toggle-nav{
+    background: url(/wp-content/themes/insomniac/image/icons/reorder.png) no-repeat;
+    background-size: 22px;
+    background-position: right;
+}
+#header-outer #toggle-nav .icon-reorder:before{ display : none; }
+
+
+
+
+
+
+
+
+
+
+/** tickets **/
+/**  Ticket: https://insomniac.atlassian.net/browse/IN-3014 **/
+@media (max-width: 1000px){
+    .vipicons{
+        white-space: nowrap;
+        padding-left: 45px;
+    }
+    .vipicons:before{
+        background-size: auto 100%;
+        width: 45px;
+        height: 45px;
+        left: -8px;
+    }
+}
+@media (max-width: 360px){
+    .vipicons{ white-space: normal;}
+}
+
+/**  Ticket: https://insomniac.atlassian.net/browse/IN-3013 **/
+@media (min-width: 1000px){
+    .channels .vc_col-sm-2 { margin-left: 2.1%; }
+}
+
+
+
+
+/** footer images issue **/
+@media (min-width: 1000px){
+    .recent_posts_extra_widget .post-widget-image > a{ width:50px; height:50px;overflow: hidden;display: inline-block; }
+    .recent_posts_extra_widget .post-widget-image > a img{ height: 50px;max-width: none; }
+}
+
+
+
+
+
+/** zendesk chat issue **/
+@media (max-width:1000px){
+    body{ width:100%; }
+}
+
+
+
+

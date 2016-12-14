@@ -1,0 +1,8 @@
+@media only screen and (min-width: 801px){
+    #header-img, #contact-us-form{ max-width:none; margin: 0 15px; background:#000; }
+    #header-img > .vc_col-sm-12, #contact-us-form > .vc_col-sm-12{ float:none; max-width:1130px; margin:0 auto;padding: 0 3%;}
+}
+
+
+
+.header-menu .menu-item > a:not([href]){ cursor: auto; }

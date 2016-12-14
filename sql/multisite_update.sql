@@ -1,0 +1,47 @@
+update wp_site set domain="local.multisite2.com" where id=1;
+#wp_options
+update wp_options set option_value = 'http://local.multisite2.com/' where option_id=1;
+update wp_options set option_value = 'http://local.multisite2.com/' where option_id=2;
+update wp_19_options set option_value = 'http://orlando2016.local.multisite2.com/' where option_id=1;
+update wp_19_options set option_value = 'http://orlando2016.local.multisite2.com/' where option_id=2;
+update wp_20_options set option_value = 'http://escape2016.local.multisite2.com/' where option_id=1;
+update wp_20_options set option_value = 'http://escape2016.local.multisite2.com/' where option_id=2;
+update wp_21_options set option_value = 'http://dreamstate.local.multisite2.com/' where option_id=1;
+update wp_21_options set option_value = 'http://dreamstate.local.multisite2.com/' where option_id=2;
+update wp_22_options set option_value = 'http://mexico2017.local.multisite2.com/' where option_id=1;
+update wp_22_options set option_value = 'http://mexico2017.local.multisite2.com/' where option_id=2;
+update wp_23_options set option_value = 'http://india.local.multisite2.com/' where option_id=1;
+update wp_23_options set option_value = 'http://india.local.multisite2.com/' where option_id=2;
+update wp_24_options set option_value = 'http://uk2017.local.multisite2.com/' where option_id=1;
+update wp_24_options set option_value = 'http://uk2017.local.multisite2.com/' where option_id=2;
+update wp_25_options set option_value = 'http://countdown2016.local.multisite2.com/' where option_id=1;
+update wp_25_options set option_value = 'http://countdown2016.local.multisite2.com/' where option_id=2;
+update wp_26_options set option_value = 'http://middlelands2017.local.multisite2.com/' where option_id=1;
+update wp_26_options set option_value = 'http://middlelands2017.local.multisite2.com/' where option_id=2;
+update wp_27_options set option_value = 'http://japan2017.local.multisite2.com/' where option_id=1;
+update wp_27_options set option_value = 'http://japan2017.local.multisite2.com/' where option_id=2;
+update wp_28_options set option_value = 'http://vegas2017.local.multisite2.com/' where option_id=1;
+update wp_28_options set option_value = 'http://vegas2017.local.multisite2.com/' where option_id=2;
+#wp_blogs
+update wp_blogs set domain='local.multisite2.com' where blog_id=1;
+update wp_blogs set domain='orlando2016.local.multisite2.com' where blog_id=19;
+update wp_blogs set domain='escape2016.local.multisite2.com' where blog_id=20;
+update wp_blogs set domain='dreamstate.local.multisite2.com' where blog_id=21;
+update wp_blogs set domain='mexico2017.local.multisite2.com' where blog_id=22;
+update wp_blogs set domain='india.local.multisite2.com' where blog_id=23;
+update wp_blogs set domain='uk2017.local.multisite2.com' where blog_id=24;
+update wp_blogs set domain='countdown2016.local.multisite2.com' where blog_id=25;
+update wp_blogs set domain='middlelands2017.local.multisite2.com' where blog_id=26;
+update wp_blogs set domain='japan2017.local.multisite2.com' where blog_id=27;
+update wp_blogs set domain='vegas2017.local.multisite2.com' where blog_id=28;
+#wp_domain_mapping
+update wp_domain_mapping set domain='orlando2016.local.multisite2.com' where blog_id=19;
+update wp_domain_mapping set domain='escape2016.local.multisite2.com' where blog_id=20;
+update wp_domain_mapping set domain='dreamstate.local.multisite2.com' where blog_id=21;
+update wp_domain_mapping set domain='mexico2017.local.multisite2.com' where blog_id=22;
+update wp_domain_mapping set domain='india.local.multisite2.com' where blog_id=23;
+update wp_domain_mapping set domain='uk2017.local.multisite2.com' where blog_id=24;
+update wp_domain_mapping set domain='countdown2016.local.multisite2.com' where blog_id=25;
+update wp_domain_mapping set domain='middlelands2017.local.multisite2.com' where blog_id=26;
+update wp_domain_mapping set domain='japan2017.local.multisite2.com' where blog_id=27;
+update wp_domain_mapping set domain='vegas2017.local.multisite2.com' where blog_id=28;

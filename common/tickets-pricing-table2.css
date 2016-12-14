@@ -1,0 +1,98 @@
+/* Latest Pricing Table Style Updated by tengfei 2016-10-24 */
+.pricing-table[data-style="default"] { margin-top:35px; }
+.pricing-table[data-style="default"] .pricing-column h4 .dollar-sign{font-size: 30px !important;font-weight: bold !important; top: 0;}
+.pricing-table[data-style="default"] .pricing-column.highlight .nectar-button {margin: 0px 0px 10px 0px;}
+.pricing-table[data-style="default"] .pricing-column.highlight .highlight-reason{ display:none !important; }
+@media (min-width:1001px){
+	.pricing-table{ text-align:center; }
+	.pricing-table .pricing-column{ float:none; display:inline-block;vertical-align:top;}
+	.pricing-table.two-cols .pricing-column, 
+	.pricing-table.three-cols .pricing-column, 
+	.pricing-table.four-cols .pricing-column
+	{ width:25% !important; }
+	.pricing-table.equalheight .pricing-column .pricing-column-content{ min-height: 169px;padding: 0; }
+	.pricing-table .pricing-column h4{font-size: 43px!important; }
+	.pricing-table[data-style="default"] .pricing-column h4 .dollar-sign{
+		font-size: 42px !important;font-weight: bold !important; top: 0;
+	}
+	.pricing-table[data-style="default"] .pricing-column.highlight h3{ padding: 19px 0px; }
+	.pricing-table[data-style="default"] .pricing-column.highlight{ margin-top:0 !important;top:0!important; }
+}
+@media (max-width: 1000px){
+	.pricing-table[data-style="default"] .pricing-column{
+	    border: solid 1px #d0d2d3;
+	    text-align: left;
+	    margin-bottom: 0 !important;
+	    position: relative;
+	}
+	.pricing-table[data-style="default"] .pricing-column h3 {
+	    padding: 10px 0 10px 16px !important;
+	    padding-bottom: 2px !important;
+	    border: none !important;
+	}
+	.pricing-table[data-style="default"] .pricing-column .pricing-column-content {
+	    border: none !important;
+		padding-bottom: 10px;
+	}	
+	.pricing-table > div.pricing-column:first-child .pricing-column-content, 
+	.pricing-table > div.pricing-column:first-child h3 {
+    	border-left: none!important;
+	}
+	.pricing-table[data-style="default"] .pricing-column h4 {
+	    font-size: 30px !important;
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-left: 0;
+		padding: 0;
+		padding-left: 12px;
+	}
+	.pricing-table[data-style="default"] .pricing-column .interval {
+	    display: inline-block;
+		width: auto;
+		padding: 0;
+		min-height: 20px;
+		padding-left: 15px;
+	}
+	.pricing-table[data-style="default"] .pricing-column .nectar-button{
+		visibility: visible;
+		position: absolute;
+		right: 15px;
+		bottom: 5px;
+		top: auto;	
+	}
+	.pricing-table[data-style="default"] .pricing-column .pricing-column-content > i{ 
+		position: absolute;
+    	right: 30px;
+    	bottom: 15px;  
+	}
+	.pricing-table[data-style="default"] .pricing-column .pricing-column-content > p{ text-align:center; }
+    .pricing-table[data-style="default"] .pricing-column.sold-out .interval{ display:none; }
+}
+
+
+
+
+
+
+/** india **/
+@media (min-width:1001px){
+    .pricing-table .pricing-column .pricing-table.vip2day .pricing-column{
+        min-height: initial;
+    }
+    .pricing-table.ga2day .pricing-column{
+        width: 50% !important;
+    }
+    .pricing-table.gasingleday .pricing-column{
+        width: 50% !important;
+    }
+    .pricing-table.vip2day .pricing-column{
+        width: 50% !important;
+    }
+    .pricing-table.vipsingleday .pricing-column{
+        width: 50% !important;
+    }
+}
+
+
+
+

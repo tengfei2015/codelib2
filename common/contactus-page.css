@@ -1,0 +1,57 @@
+/*--start of contact us style (please try to not change this block) -- */
+div.authentication-modalcontrols, div#attach-files-name{ padding-bottom: 7px; }
+#contact-us-form .wpcf7-mail-sent-ok{ display:none !important; }
+.required-field{ margin-left:0 !important; }
+#contact-us-form #uploadtextfield, 
+#contact-us-form .submit-button, 
+.email-sentok button{ background: #af2f2f !important; }
+a#uploadtextfield:hover{opacity: 0.7;}
+#contact-us-form .submit-button:hover{ opacity:0.7; }
+.email-sentok button:hover{opacity:0.7;}
+
+#contact-us-form #uploadtextfield:before,
+#contact-us-form span.submit-button:before, .email-sentok button:before{
+   background: transparent !important; display:none;
+}
+#contact-us-form form input[type="text"]:focus,
+#contact-us-form form textarea:focus,
+#contact-us-form form input[type="email"]:focus,
+.form-item-category .selectric-focus .selectric{
+    border: 1px solid #af2f2f !important;
+}
+.form-item-category .selectric .label:before{ border-bottom-color: #af2f2f !important;}
+.form-item-category .selectric{width:100%;}
+.selectric-wrapper{width: 46%;}
+.selectric .label{margin: 0 38px 0 5px;}
+input#filesToUpload{display: none;}
+.selectric-input{visibility:hidden;}
+@media(max-width:1000px){
+    .required-field{padding-left: 1%;}
+    .sign-up-form{margin-bottom: 0 !important;}
+    .required-field{margin-left:5% !important;}
+    #contact-us-form .wpcf7-form .form-item-files .wpcf7-not-valid-tip { position: initial;}
+    .display-none-mobile{margin-bottom:0 !important;}
+    .selectric-wrapper{width: 100%;}
+    #contact-us-form .flexbox img.ajax-loader{ margin-top:0;}
+    #contact-us-form #attach-files-name{padding-left:8%;}
+}
+@media(min-width:1000px){
+    .sign-up-form>.wpb_wrapper{padding: 37px 30px 1px !important;}
+    div.authentication-modal-controls{ padding-bottom: 0px; padding-top: 7px;}
+}
+.error{ color:red; }
+.form-item-files{ display:none; }
+/*--end of contact us style (please try to not change this block) -- */
+
+
+/*make contact us image align with form*/
+@media (min-width: 768px){
+    #contact-us-form .sign-up-form > .wpb_wrapper{ margin-top:0; }
+    #contact-us-form .vc_col-sm-4 *,
+    #contact-us-form .vc_col-sm-4 .wpb_text_column img{ height:100%; }
+    #contact-us-form .sign-up-form{height: auto !important;}
+    #contact-us-form form input[type="text"], #contact-us-form form input[type="email"]{
+        padding: 8px 15px !important;
+    }
+}
+

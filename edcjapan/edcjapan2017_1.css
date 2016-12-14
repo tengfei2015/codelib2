@@ -1,0 +1,23 @@
+@media (min-width: 1280px){
+    #myModal .modal-dialog{ height:100%; }
+    #myModal .modal-dialog .modal-content{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-top: -280px;
+    }
+}
+
+
+@media (max-width: 1000px){
+    #ajax-content-wrap .main-content{
+        max-width: none !important;
+        width: 100%;
+    }
+    #ajax-content-wrap .main-content .wpb_row {
+        position: relative;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}

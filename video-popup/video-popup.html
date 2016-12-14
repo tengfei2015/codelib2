@@ -1,0 +1,25 @@
+
+<div id="youtube-video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zo47D-ZeMmI" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<script type="text/javascript">
+(function($){
+    var $obj = $("#youtube-video, #youtube-video iframe"); var ratio = 0.563;
+    var ajust = function(){
+        var w = $(window).width() > 1000 ? 1000 : w;
+        var h = w * ratio;
+        $obj.css({'width':w, 'height':h+'px !important'});
+    }
+    ajust();$(window).resize(function(){ajust();});    
+
+    
+    window.showYoutubeVideo = function(videoId){
+        $.prettyPhoto.open(videoId);
+        setTimeout(function(){ window.dispatchEvent(new Event('resize'));},1000);
+        return false;
+    }
+    $(".watch-trailer a.nectar-button").attr('onclick', "showYoutubeVideo('#youtube-video');return false;");
+})(jQuery);
+</script>
+
