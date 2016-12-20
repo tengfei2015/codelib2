@@ -1,33 +1,26 @@
-/************************************************
-New Styles Tengfei
-*/
-/*nav*/
-#header-outer.transparent header#top nav > ul > li > a{
-    color: #fff !important;
-    opacity: 1 !important
-}
-#footer-outer .widget{
-    min-height: 240px;
-}
-#footer-outer .widget ul li{
-    width: 100%;
-}
-
-#header-outer .header-logos{ 
-    display:none;
-}
-#header-outer.small-nav .header-logos{ 
-    display:block !important;
+/**===================================================================================================
+Home
+=====================================================================================================*/
+.slider-post-container .post-content .article-content .title:hover{ color:#DA2CC3 !important;}
+#firstRow .social-icons-middle{ z-index:12; }
+@media(max-width:767px){
+    .essentials .work-info{
+        display:block !important;
+    }
 }
 
 
 
 
+/*news*/
+#post-area.masonry article.post .post-content{
+    color: grey;
+}
 
 
-/************************************************
+/**===================================================================================================
 Info
-*************************************************/
+=====================================================================================================*/
 /*make container full width on mobile --tengfei*/
 @media (max-width: 1000px){
     #ajax-content-wrap .main-content, #ajax-content-wrap .footer-content{
@@ -62,7 +55,7 @@ Info
     }
     #ajax-content-wrap .wpb_row .text-center.not-last{ padding-bottom:0 !important; }
     #ajax-content-wrap .wpb_row:not(.xui_header_section):not(.calendar-row) .wpb_column:not(.text-center){
-        padding:0 !important; margin:0;
+        padding:0 !important;
     }
     #ajax-content-wrap .wpb_row .wpb_text_column:not(.text-center){
         padding:0px!important;margin: 0 !important;
@@ -72,6 +65,8 @@ Info
     #ajax-content-wrap .footer-content .wpb_row.socail_channels{
         max-width: 300px;margin: 0 auto !important;
     }
+    body .vc_row-fluid .wpb_column{ margin-bottom:0!important; }
+    .owl-carousel .owl-controls{ margin: 0 !important; }
     .wpb_row.socail_channels .col .wpb_column{
         margin-top: 25px !important;
     }
@@ -79,3 +74,40 @@ Info
         margin-bottom: 25px !important;
     }
 }
+
+
+
+
+
+
+
+/**===================================================================================================
+Salient
+=====================================================================================================*/
+
+/************************************************
+New Styles Tengfei
+*/
+.icon-angle-down:before{ content: "\f0da"; }
+body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7" !important; }
+#mobile-menu li.menu-item .sf-sub-indicator > i{ font-size: 20px; }
+
+/*fix header menu hard read problem author:yaxing*/
+.page-header-bg-image{opacity:0.8;}
+
+.wpb_wrapper h2>strong, .xui_header_section2 .wpb_text_column p strong{color: white;}
+
+/*fix the color of sticky buy now button on footer author:Zhen*/
+#footer-button.footer-sticky-nav,
+#footer-socails-nav.footer-sticky-nav{ background: #0099cc !important;}
+.footer-sticky-nav > a { font-weight: bold; }
+
+/*footer widget sponsors style author:tengfei */
+html[lang="en"] .sponsor-row-2, html[lang="en"] #sponsors{display: none;}
+.sponsor-row-2 .no-link > img{display: none;}
+.sponsor-row-2 .clients > div{ margin-bottom:0 !important; }
+@media (min-width: 690px){
+    .sponsor-row-2 .clients{ text-align:center; }
+    .sponsor-row-2 .clients > div{ float:none;display: inline-block;float: none; }
+}
+

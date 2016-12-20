@@ -1,14 +1,3 @@
-
-
-
-/**===================================================================================================
-News
-=====================================================================================================*/
-.post-content .post-meta .date{ color:#676767; }
-.post-content .post-meta .date:hover{ color:#c6273d; }
-
-
-
 /**===================================================================================================
 HomePage 
 =====================================================================================================*/
@@ -18,6 +7,7 @@ HomePage
 .sliderBlog > .wpb_wrapper > .row{ margin-bottom:0; padding-bottom:0 }
 .sliderBlog .view-more{ margin-top:0 !important; }
 @media(max-width:1000px){
+    .owl-carousel{ margin-bottom: 0!important; }
     .sliderBlog .view-more{ margin-top:10px !important; }
     .slider-post-container article{ margin-bottom: 0 !important; margin-top:0 !important; }
     .essentials-content .portfolio-items > .col{ margin:0 !important; }
@@ -30,6 +20,11 @@ HomePage
 @media(max-width:1000px){
     /*hide slider content on mobile*/
     .parallax_slider_outer.first-section .swiper-slide .content{ display:none;}
+    .social-icons-middle #newsletter-signup{ position:static; }
+    .watch-trailer .nectar-button{border: none;font-weight: bold;}
+    #firstRow .watch-trailer{padding: 0 !important;padding-top: 5px !important;}
+    /*remove the extra space*/
+    body #portfolio{ margin:0 !important; } 
 }
 
 /*watch trailer*/
@@ -45,12 +40,36 @@ HomePage
 
 
 /**===================================================================================================
-Tickets Page  prallax
+Tickets Page
 =====================================================================================================*/
+.pricing-table[data-style="default"] .pricing-column h4{ font-size:44px !important; }
+.pricing-table[data-style="default"] .pricing-column h4 .dollar-sign{font-size: 44px; top: 0px;}
+.wpb_wrapper > div.pricing-table{margin: 0;padding-bottom: 25px;}
+@media (max-width: 1000px){
+    .wpb_wrapper > div.pricing-table{padding-bottom: 0;}
+    .pricing-table > .pricing-column:last-child{ margin-bottom:0 !important; }
+    #ajax-content-wrap .container-wrap{ padding-bottom:0; }
+    .wpb_row{margin-bottom:0;}
+    .wpb_wrapper > .divider{display:none;}
+}
 
 
-/*Info Page*/
+/**===================================================================================================
+Experience Page
+=====================================================================================================*/
+.portfolio-items .col .work-item.style-3 .work-info-bg{display:none;}
+.portfolio-items .work-item.style-3 img{transform: none !important;}
+.wpb_gallery{margin-bottom: 0 !important;}
 @media only screen and (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > h3 > img{ width:100%; }
+    .wpb_wrapper > .divider{display:none;}
+}
+
+
+/**===================================================================================================
+Health Page
+=====================================================================================================*/
+@media (max-width: 1000px){
     .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
 }
 
@@ -58,9 +77,15 @@ Tickets Page  prallax
 
 
 
-
-
-
+/**===================================================================================================
+Info Page
+=====================================================================================================*/
+@media (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
+    .wpb_row{margin-bottom:0;}
+    .age-id{width:100%!important;}
+    .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
+}
 
 
 
@@ -109,15 +134,88 @@ body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7" !importan
 .xui_header_section h2 > strong, .parallax_header_section h2 > strong{ text-transform: uppercase; }
 @media (min-width: 1001px){
     .header-section-bg-color h2 > strong, .parallax_header_section h2 > strong,
-    .xui_header_section h2 > strong{ letter-spacing: 5px;}
+    .xui_header_section h2 > strong{ letter-spacing: 5px; }
 }
 
 
 /* New Styles */
-
+/*sponsor*/
+.container.footer-content .carousel.clients > div:hover {
+    opacity: 0.7 !important;
+}
+.ascend #footer-outer #footer-widgets .col ul li a{
+    display:inline-block;
+}
 .full-width-section.parallax_section .row-bg-wrap,
 .full-width-content.parallax_section .row-bg-wrap{filter:brightness(80%);-webkit-filter:brightness(80%);}
 
+/*single page*/
+.single-post #footer-outer{ margin-top:0 !important; }
+@media (min-width:1001px){
+    #single-meta .nectar-social{display:block;}
+}
 
 
+
+/*make container full width on mobile --tengfei*/
+@media (max-width: 1000px){
+    #ajax-content-wrap .main-content, #ajax-content-wrap .footer-content{
+        max-width: none !important;
+        width: 100%;
+    }
+    #ajax-content-wrap .main-content .wpb_row:not(.xui_header_section):not(.parallax_section),
+    #ajax-content-wrap .footer-content .wpb_row:not(.xui_header_section2){
+        position: relative;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+    }
+    #ajax-content-wrap .main-content .wpb_row.xui_header_section,
+    #ajax-content-wrap .footer-content .wpb_row.xui_header_section2{
+        width: 100% !important;padding-left: 0 !important; padding-right: 0 !important;
+        margin: 0 !important;
+    }
+    #ajax-content-wrap .wpb_row .text-center{
+        padding-left:5% !important;
+        padding-right:5% !important;
+        padding-top:25px !important;
+        margin:0;
+    }
+    #ajax-content-wrap .wpb_row .text-center.ul-list{
+        padding-left:2% !important;
+    }
+    #ajax-content-wrap .wpb_row .text-center.ul-list > .wpb_wrapper > h4{
+        padding:0 4%;
+    }
+    #ajax-content-wrap .wpb_row .text-center:last-child,
+    #ajax-content-wrap .wpb_row .text-center.last{
+        padding-bottom:20px !important;    
+    }
+    #ajax-content-wrap .wpb_row .text-center.not-last{ padding-bottom:0 !important; }
+    #ajax-content-wrap .wpb_row:not(.xui_header_section):not(.calendar-row) .wpb_column:not(.text-center){
+        padding:0 !important;
+    }
+    #ajax-content-wrap .wpb_row .wpb_text_column:not(.text-center):not(.view-more){
+        padding:0px!important;margin: 0 !important;
+    }
+    
+    #ajax-content-wrap .footer-content{ background:#2b2b2b; }
+    #ajax-content-wrap .footer-content .wpb_row.socail_channels{
+        max-width: 300px;margin: 0 auto !important;
+    }
+    body .vc_row-fluid .wpb_column{ margin-bottom:0!important; }
+    .owl-carousel .owl-controls{ margin: 0 !important; }
+    .wpb_row.socail_channels .col .wpb_column{
+        margin-top: 25px !important;
+    }
+    .wpb_row.socail_channels .col .wpb_column:last-child{
+        margin-bottom: 25px !important;
+    }
+    
+    .single-post #ajax-content-wrap .main-content{
+        padding-left:5% !important;
+        padding-right:5% !important;
+    }
+}
 

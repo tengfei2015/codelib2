@@ -1,0 +1,131 @@
+@media (min-width:767px) {
+    .imagebox_post .regular:hover{ 
+        transform: scale(1.005);
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,.26) !important; 
+    }    
+    .imagebox_disable_post_content_style .post-content :hover{ 
+        transform: none;
+        box-shadow: none;
+    }
+}
+article.post .post-header h2 a {
+  font-weight: bold;
+}
+.post-header .meta-category a{
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/*
+* author:tengfei
+* 2016-2-24
+*/
+#post-area.masonry  .posts-container article.post {
+    min-height:initial!important; 
+}
+ #post-area.masonry .posts-container article.post .post-content:hover {
+    color: #c6273d !important;
+}
+
+
+@media (min-width:767px) {
+    #post-area.masonry  .posts-container article .inner-wrap{
+        min-height: 340px !important; 
+    }
+    #post-area.masonry  .posts-container article .inner-wrap .post-content{
+        min-height: 340px !important; 
+    }
+    #post-area.masonry .posts-container article.post .post-meta{
+        position:absolute !important;
+        padding:0px 0px 0px 18px !important;
+        margin-bottom:0px !important;
+        bottom:2px !important;
+        top:inherit !important;
+    }
+}
+@media(min-width:1600px){
+     #post-area.masonry  .posts-container article .inner-wrap{
+        min-height: 360px !important; 
+    }
+    #post-area.masonry  .posts-container article .inner-wrap .post-content{
+        min-height: 360px !important; 
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .blog-fullwidth-wrap #post-area.masonry {
+        margin-bottom: 0px !important;
+    }
+}
+
+/** Desc: Read More Link, author: Tengfei Date:2016-6-14 */
+#post-area .posts-container article .post-content .content-inner{ 
+	position:static;
+}
+#post-area .posts-container article .post-content .more-link{ 
+	position: absolute; display:block !important;
+	bottom: 2px;
+	right: 7px;
+}
+#post-area .posts-container article .post-content .more-link .continue-reading{
+	color: #c6273d;
+	background: transparent !important;
+}
+
+
+/*remove the grey bar,author:yaxing*/
+@media (max-width: 1000px){
+    #post-area {
+        background: #fff;
+    }
+    .blog-fullwidth-wrap #post-area.masonry{
+        margin-bottom: 0 !important;
+    }
+}
+.sticky .content-inner{
+    box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+    padding:0 !important;
+}
+@media (max-width: 1000px){
+    #ajax-content-wrap .full-width-content-only-mobile > .col .vc_col-sm-12 {
+        margin-bottom: 0!important;
+    }
+ }
+/*add padding for blog in desktop*/
+@media(min-width:1000px){
+    .full-width-content-only-mobile{
+        padding-bottom:2% !important;
+    }
+}
+
+article.post .post-header h2 a:hover {
+    color:#444 !important;
+}
+article.post .post-content {
+    padding: 0;color: #888;
+}
+@media (max-width:1000px){
+    /* remove the space between news on mobile --tengfei */
+    #post-area .posts-container article{ position:relative !important; top: 0 !important; margin-bottom:0 !important; }
+    #post-area article .post-content .post-meta{ padding-bottom: 5px !important; }
+    .blog-fullwidth-wrap #post-area.masonry{ margin-bottom:0 !important; }
+    #post-area .posts-container{ height:auto !important; }
+    /*change spacing to 15*/
+    .ascend .masonry-blog-item .article-content-wrap{
+        padding:15px!important;
+    }
+}
+/*shadow */
+@media (min-width: 767px){
+    #post-area article:hover {
+        transform: scale(1.005);
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,.26) !important;
+    }
+}
+/* fullwidth image */
+@media (max-width: 1000px){
+    #ajax-content-wrap .full-width-content.blog-fullwidth-wrap{
+        width: 100% !important; padding: 0 !important;
+    }
+}
