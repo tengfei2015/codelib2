@@ -1,0 +1,60 @@
+
+<!-- set time button -->
+<a class="nectar-button medium see-through-2" href="/en/experience/set-times/" data-color-override="false"  data-hover-color-override="#005292" data-hover-text-color-override="#fff"><span>VIEW SET TIMES</span> </a>
+
+<script type="text/javascript">
+(function($){
+	var adaptMdColumnLink = function(){
+		$("#ajax-content-wrap .md-column-link").each(function(){
+			var mbLink = $(".hide-on-desktop a", this).attr("href");
+			if($(window).width() < 1000 && mbLink && $(".column-link", this)){
+				$(".column-link", this).attr("href", mbLink);
+			}
+	    });
+	}
+	adaptMdColumnLink();
+})(jQuery);
+</script>
+
+
+
+
+<div id="youtube-video">
+<iframe src="" srcet="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Felectricdaisycarnival%2Fvideos%2F10154371072176877%2F&width=500&show_text=false&appId=821720021249573&height=281" width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+<script type="text/javascript">
+(function($){
+    $(function(){
+        var $obj = $("#youtube-video, #youtube-video iframe"); var ratio = 0.563;
+        var ajust = function(){
+            var w = $(window).width() > 1000 ? 1000 : '';
+        }
+        ajust();$(window).resize(function(){ajust();});
+        
+        $(".watch-trailer .nectar-button").click(function(){
+            var $iframe = $("#youtube-video iframe"); var link = $iframe.attr("srcet");
+            if($iframe.attr("srcet")){ $iframe.attr("src", link); $iframe.removeAttr("srcet");}
+            $.prettyPhoto.open('#youtube-video');
+            setTimeout(function(){ window.dispatchEvent(new Event('resize'));},1000);
+            return false;
+        });
+    });
+})(jQuery);
+</script>
+
+
+<script type="text/javascript">
+jQuery(function(){
+    jQuery("#insomniac-newsletter-popup, .insomiac-nl-popup").remove();
+    insomniac.newsletterInit({site_name : 'EDCJAPAN_2017_EN'});
+    jQuery('#newsletter-signup').click(function(){
+        jQuery("#dummy-newsletter-btn").trigger("click");
+        return false;
+    });
+});
+</script>
+
+
+
+

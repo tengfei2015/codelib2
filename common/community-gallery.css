@@ -1,10 +1,8 @@
-@media(max-width: 1000px){
-    /*remove lightbox feature on mobile author:tengfei*/
-    .wpb_gallery .work-item .work-info{display:none;}
-    .wpb_gallery #portfolio .work-item > img{ width:100% !important; }
-}
-/*gallery remove spaces author:tengfei */
 body #ajax-content-wrap .wpb_gallery #portfolio > .col{ margin:0 !important; }
+body #ajax-content-wrap .wpb_gallery{margin-bottom: 0 !important;}
+.wpb_gallery .work-item .work-info-bg{display:none;}
+#portfolio{ background:#000;margin-left:0 !important; }
+#portfolio .work-item{width:100%;}
 @media(min-width: 1001px) {
     .portfolio-items .col.span_3{
         width: 24.9% !important;
@@ -16,7 +14,8 @@ body #ajax-content-wrap .wpb_gallery #portfolio > .col{ margin:0 !important; }
 	    width: 49.9%!important;
 	}
 }
-.wpb_gallery .work-item .work-info-bg{display:none;}
-#portfolio{ background:#000;margin-left:0 !important; }
-#portfolio .work-item{width:100%;}
-
+@media only screen and (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
+    .wpb_gallery .work-item .work-info{display:none;}
+    .wpb_gallery #portfolio .work-item > img{ width:100% !important; }
+}

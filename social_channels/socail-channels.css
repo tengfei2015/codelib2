@@ -1,33 +1,5 @@
+/** THE NEW SOLUTION */
 
-
-
-.channels a i { color: #f8d887 !important; }
-.social.channels .wpb_column .wpb_wrapper p > a{ margin-right:10px; }
-
-/*UK,ESCAPE,COUNTDOWN*/
-/**
-* Socail Channels Six Columns #252525
-*/
-@media (min-width: 1000px){
-    .channels-six-column > .col{ width:100%;text-align:center; }
-    .channels-six-column > .col > .wpb_column{ display:inline-block;margin: 0 !important;padding:0;}
-    .channels-six-column > .col > .wpb_column:before{ display:none; }
-    .channels-six-column > .col > .wpb_column > .wpb_wrapper{ background:#252525; }
-    .channels-six-column > .col > .wpb_column p > strong{ white-space: nowrap; }
-}
-@media (min-width: 1251px){
-    .channels-six-column > .col > .wpb_column{
-        width: 16.666% !important; padding:0 8px;
-    }
-}
-@media (min-width: 1001px) and (max-width: 1250px){
-    .channels-six-column > .col > .wpb_column{
-        width: 33.333% !important; padding: 10px 4%;
-    }
-}
-
-
-/* channels channels-seven-column */
 /**
 * Socail Channels PricingTable Way #252525 
 */
@@ -53,8 +25,42 @@
     .pricing-table.channels .pricing-column{width:25%;padding:5px 5px;}
     .pricing-table.channels-seven-column .pricing-column{width:25%;padding:5px 5px;}
 }
+@media (max-width: 1000px){
+    .pricing-table.channels .pricing-column:last-child{margin-bottom:0 !important;}
+}
 
 
+
+
+
+
+
+/** THE OLD SOLUTION */
+
+.channels a i { color: #f8d887 !important; }
+.social.channels .wpb_column .wpb_wrapper p > a{ margin-right:10px; }
+
+/*UK,ESCAPE,COUNTDOWN*/
+/**
+* Socail Channels Six Columns #252525
+*/
+@media (min-width: 1000px){
+    .channels-six-column > .col{ width:100%;text-align:center; }
+    .channels-six-column > .col > .wpb_column{ display:inline-block;margin: 0 !important;padding:0;}
+    .channels-six-column > .col > .wpb_column:before{ display:none; }
+    .channels-six-column > .col > .wpb_column > .wpb_wrapper{ background:#252525; }
+    .channels-six-column > .col > .wpb_column p > strong{ white-space: nowrap; }
+}
+@media (min-width: 1251px){
+    .channels-six-column > .col > .wpb_column{
+        width: 16.666% !important; padding:0 8px;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1250px){
+    .channels-six-column > .col > .wpb_column{
+        width: 33.333% !important; padding: 10px 4%;
+    }
+}
 
 
 
