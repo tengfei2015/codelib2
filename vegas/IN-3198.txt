@@ -1,0 +1,28 @@
+
+
+
+
+
+/**
+Deploy Steps
+**/
+
+1. enable lazyload option in nectar slider
+
+2. add below styles to homepage
+
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+}
+@media (max-width:1000px){
+    body.ascend{background-color:#f6f6f6;}
+}
+
+3.add id attribute "nectar-slider" to nectar slider row

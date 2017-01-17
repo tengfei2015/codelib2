@@ -17,31 +17,30 @@
 </script>
 
 
-
-
 <div id="youtube-video">
 <iframe src="" srcet="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Felectricdaisycarnival%2Fvideos%2F10154371072176877%2F&width=500&show_text=false&appId=821720021249573&height=281" width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 </div>
 
 <script type="text/javascript">
 (function($){
-    $(function(){
-        var $obj = $("#youtube-video, #youtube-video iframe"); var ratio = 0.563;
-        var ajust = function(){
-            var w = $(window).width() > 1000 ? 1000 : '';
-        }
-        ajust();$(window).resize(function(){ajust();});
-        
-        $(".watch-trailer .nectar-button").click(function(){
-            var $iframe = $("#youtube-video iframe"); var link = $iframe.attr("srcet");
-            if($iframe.attr("srcet")){ $iframe.attr("src", link); $iframe.removeAttr("srcet");}
-            $.prettyPhoto.open('#youtube-video');
-            setTimeout(function(){ window.dispatchEvent(new Event('resize'));},1000);
-            return false;
-        });
-    });
+    var $obj = $("#youtube-video, #youtube-video iframe"); var ratio = 0.563;
+    var ajust = function(){
+        var wd = $(window).width();
+        var w = wd > 1000 ? 1000 : wd;
+        var h = w * ratio;
+        $obj.css({'width':w,'height':h});
+    }
+    ajust();$(window).resize(function(){ajust();});
+    
+    window.showYoutubeVideo = function(videoId){
+        $.prettyPhoto.open(videoId);
+        setTimeout(function(){ window.dispatchEvent(new Event('resize'));},1000);
+        return false;
+    }
+    $(".watch-trailer a.nectar-button").attr('onclick', "showYoutubeVideo('#youtube-video');return false;");
 })(jQuery);
 </script>
+
 
 
 <script type="text/javascript">

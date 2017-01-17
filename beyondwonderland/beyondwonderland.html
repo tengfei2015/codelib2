@@ -1,0 +1,19 @@
+
+
+
+
+<!-- tickets page -->
+<script type="text/javascript">
+(function($) {
+    $(function(){
+        // section header click able on mobile
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        $("#ajax-content-wrap .xui_header_section").click(function(){
+            if(isMobile){
+                var id = $(this).attr('id');
+                $("ul.sf-menu > .current-menu-parent .sub-menu").find("a[href='#"+id+"']").trigger('click');
+            }
+        });
+    });
+})(jQuery);
+</script>

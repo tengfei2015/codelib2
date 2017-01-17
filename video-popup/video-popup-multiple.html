@@ -10,12 +10,12 @@
 (function($){
     var $obj = $("#youtube-video-2016, #youtube-video-2016 iframe, #youtube-video-2017, #youtube-video-2017 iframe"); var ratio = 0.563;
     var ajust = function(){
-        var w = $(window).width() > 1000 ? 1000 : w;
+        var wd = $(window).width();
+        var w = wd > 1000 ? 1000 : wd;
         var h = w * ratio;
-        $obj.css({'width':w, 'height':h+'px !important'});
+        $obj.css({'width':w,'height':h});
     }
-    ajust();$(window).resize(function(){ajust();});    
-
+    ajust();$(window).resize(function(){ajust();});
     
     window.showYoutubeVideo = function(videoId){
         $.prettyPhoto.open(videoId);
