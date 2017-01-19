@@ -1,7 +1,10 @@
-
-<!-- set time button -->
+### Set time button
+```
 <a class="nectar-button medium see-through-2" href="/en/experience/set-times/" data-color-override="false"  data-hover-color-override="#005292" data-hover-text-color-override="#fff"><span>VIEW SET TIMES</span> </a>
+```
 
+### Column link diff on desktop
+```
 <script type="text/javascript">
 (function($){
 	var adaptMdColumnLink = function(){
@@ -15,18 +18,22 @@
 	adaptMdColumnLink();
 })(jQuery);
 </script>
+```
 
 
+
+
+### Watch Trailer Old Solution
+```
 <div id="youtube-video">
-<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Felectricdaisycarnival%2Fvideos%2F10154371072176877%2F&width=500&show_text=false&appId=821720021249573&height=281" width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uyLVDbtzr8g" frameborder="0" allowfullscreen></iframe>
 </div>
-
 <script type="text/javascript">
 (function($){
     var $obj = $("#youtube-video, #youtube-video iframe"); var ratio = 0.563;
     var ajust = function(){
         var wd = $(window).width();
-        var w = wd > 1000 ? 1000 : wd;
+        var w = wd > 800 ? 800 : wd;
         var h = w * ratio;
         $obj.css({'width':w,'height':h});
     }
@@ -37,13 +44,17 @@
         setTimeout(function(){ window.dispatchEvent(new Event('resize'));},1000);
         return false;
     }
-    $(".watch-trailer a.nectar-button").attr('onclick', "showYoutubeVideo('#youtube-video');return false;");
+    $(".watch-trailer a.nectar-button, .swiper-slide a[href='#watch-trailer']").attr('onclick', "showYoutubeVideo('#youtube-video');return false;");
 })(jQuery);
 </script>
+```
 
+
+### EN Newsletter
+```
 <script type="text/javascript">
 jQuery(function(){
-    jQuery("#insomniac-newsletter-popup, .insomiac-nl-popup").remove();
+    //jQuery("#insomniac-newsletter-popup, .insomiac-nl-popup").remove();
     insomniac.newsletterInit({site_name : 'EDCJAPAN_2017_EN'});
     jQuery('#newsletter-signup').click(function(){
         jQuery("#dummy-newsletter-btn").trigger("click");
@@ -51,27 +62,11 @@ jQuery(function(){
     });
 });
 </script>
+```
 
 
-
-###JP Newsletter solution1
-<a class="btn-newsletter-signup" id="surveymonkey-nl-link" href="https://jp.surveymonkey.com/s/edcjapan?iframe=true&width=560&height=500" rel="prettyPhoto[iframes]">SIGNUP</a>
-
-
-###JP Newsletter solution2
-<script type="text/javascript">
-jQuery(function(){
-    jQuery('.btn-newsletter-signup').magnificPopup({
-      items: {
-          src: '<div class="white-popup"><iframe src="https://jp.surveymonkey.com/s/edcjapan" title="test" frameborder="0" width="470" height="500" style="height:500px;"></iframe></div>',
-          type: 'inline'
-      }
-    });
-});
-</script>
-
-
-###JP Newsletter solution3
+### JP Newsletter
+```
 <div id="surveymonkey-content" class="white-popup mfp-hide"><iframe src="https://jp.surveymonkey.com/s/edcjapan" title="test" frameborder="0" width="470" height="500" style="height:500px;"></iframe></div>
 <script type="text/javascript">
 jQuery(function(){
@@ -83,9 +78,22 @@ jQuery(function(){
     });
 });
 </script>
+```
 
 
 
+### Watch Trailer New Solution
+```
+<a id="video-pp-link" href="https://www.youtube.com/embed/uyLVDbtzr8g&iframe=true&width=750&height=420" rel="prettyPhoto">watch trailer</a>
+<script type="text/javascript">
+(function($){
+    window.showYoutubeVideo = function(videoId){
+        $(videoId).trigger("click");return false;
+    }
+    $(".watch-trailer a.nectar-button, .swiper-slide a[href='#watch-trailer']").attr('onclick', "showYoutubeVideo('#video-pp-link');return false;");
+})(jQuery);
+</script>
+```
 
 
 

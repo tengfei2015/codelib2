@@ -1,5 +1,3 @@
-/* accent color: #c03646 */
-
 /**===================================================================================================
 HomePage 
 =====================================================================================================*/
@@ -37,13 +35,11 @@ HomePage
 }
 
 /*watch trailer*/
-@media only screen and (max-width: 690px){
-    .pp_content .pp_inline iframe{height: 180px!important;}
-    .watch-trailer a { width: 100%; }
-}
 .pp_pic_holder .pp_close{ top: 8px; right: 0;}
-.pp_pic_holder #pp_full_res iframe[src='https://jp.surveymonkey.com/s/edcjapan']{
-   padding: 20px;background: #fff;border-radius: 5px;
+@media only screen and (max-width: 690px){
+    .pp_content #pp_full_res iframe{height: 180px!important;width:320px}
+    .pp_pic_holder .pp_close{ top:0;}
+    .watch-trailer a { width: 100%; }
 }
 
 /*essentials */
@@ -66,6 +62,14 @@ div.essentials-content .portfolio-items .col{margin-bottom:0 !important;}
 @media (max-width:1000px){
     body.ascend{background-color:#f6f6f6;}
 }
+
+
+
+/**below styles only for JP**/
+.mfp-wrap.mfp-ready .mfp-content{margin: 0 auto;width: auto;}
+.mfp-wrap.mfp-ready .mfp-content .white-popup{background: #fff;border-radius: 5px;}
+.mfp-wrap.mfp-ready .mfp-content iframe{padding: 30px 15px 30px;}
+.mfp-wrap.mfp-ready .mfp-content .mfp-close{top: -5px;right: -5px;}
 
 
 
@@ -152,6 +156,7 @@ Salient
 =====================================================================================================*/
 
 /*nav*/
+.header-logos{display:none !important;}
 .icon-angle-down:before{ content: "\f0da"; }
 body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7" !important; }
 #mobile-menu li.menu-item .sf-sub-indicator > i{ font-size: 20px; }
@@ -160,15 +165,9 @@ body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7" !importan
     #header-outer.small-nav .header-logos{display:block;}
 }
 #header-outer{border: none!important;}
-#header-outer.transparent header#top nav ul.sf-menu>li>a{
-    color: #FFF;opacity: 1 !important; transition: none !important;
-}
-#lang_sel_footer a {
-    background: #69071a none repeat scroll 0 0 !important;
-}
-#lang_sel_footer a.lang_sel_sel, #lang_sel_footer a:hover {
-    background-color: #e03d5a !important;
-}
+#header-outer.transparent header#top nav ul.sf-menu>li>a{color: #FFF;opacity: 1 !important; transition: none !important;}
+#lang_sel_footer a{background: #69071a none repeat scroll 0 0 !important;}
+#lang_sel_footer a.lang_sel_sel, #lang_sel_footer a:hover{background-color: #e03d5a !important;}
 
 /*section header*/
 .wpb_wrapper h2>strong, .xui_header_section2 .wpb_text_column p strong{color: white;}
@@ -231,16 +230,6 @@ html[lang="en"] .sponsor-row-2, html[lang="en"] #sponsors{display: none;}
 
 
 
-
-
-
-
-
-/**temp**/
-.mfp-wrap.mfp-ready .mfp-content{margin: 0 auto;width: auto;}
-.mfp-wrap.mfp-ready .mfp-content .white-popup{background: #fff;border-radius: 5px;}
-.mfp-wrap.mfp-ready .mfp-content iframe{padding: 30px 15px 30px;}
-.mfp-wrap.mfp-ready .mfp-content .mfp-close{top: -5px;right: -5px;}
 
 
 
