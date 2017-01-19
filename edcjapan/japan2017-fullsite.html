@@ -18,7 +18,7 @@
 
 
 <div id="youtube-video">
-<iframe src="" srcet="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Felectricdaisycarnival%2Fvideos%2F10154371072176877%2F&width=500&show_text=false&appId=821720021249573&height=281" width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Felectricdaisycarnival%2Fvideos%2F10154371072176877%2F&width=500&show_text=false&appId=821720021249573&height=281" width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 </div>
 
 <script type="text/javascript">
@@ -41,8 +41,6 @@
 })(jQuery);
 </script>
 
-
-
 <script type="text/javascript">
 jQuery(function(){
     jQuery("#insomniac-newsletter-popup, .insomiac-nl-popup").remove();
@@ -53,6 +51,43 @@ jQuery(function(){
     });
 });
 </script>
+
+
+
+###JP Newsletter solution1
+<a class="btn-newsletter-signup" id="surveymonkey-nl-link" href="https://jp.surveymonkey.com/s/edcjapan?iframe=true&width=560&height=500" rel="prettyPhoto[iframes]">SIGNUP</a>
+
+
+###JP Newsletter solution2
+<script type="text/javascript">
+jQuery(function(){
+    jQuery('.btn-newsletter-signup').magnificPopup({
+      items: {
+          src: '<div class="white-popup"><iframe src="https://jp.surveymonkey.com/s/edcjapan" title="test" frameborder="0" width="470" height="500" style="height:500px;"></iframe></div>',
+          type: 'inline'
+      }
+    });
+});
+</script>
+
+
+###JP Newsletter solution3
+<div id="surveymonkey-content" class="white-popup mfp-hide"><iframe src="https://jp.surveymonkey.com/s/edcjapan" title="test" frameborder="0" width="470" height="500" style="height:500px;"></iframe></div>
+<script type="text/javascript">
+jQuery(function(){
+    jQuery('.btn-newsletter-signup').magnificPopup({
+      items: {
+          src: jQuery('#surveymonkey-content'),
+          type: 'inline'
+      }
+    });
+});
+</script>
+
+
+
+
+
 
 
 

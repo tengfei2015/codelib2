@@ -20,8 +20,8 @@ HomePage
 #firstRow .travel-link a{ color:#fff; }
 #firstRow .travel-link a i{ color:#fff !important; }
 .social-icons-middle{ z-index:11; }
-.social-icons-middle a:not(#newsletter-signup){ vertical-align: middle; }
-.social-icons-middle .wpb_raw_html a{ padding: 5px !important;display: inline-block; }
+.social-icons-middle a{ vertical-align: middle; }
+.social-icons-middle .wpb_raw_html a:not(.btn-newsletter-signup){ padding: 5px !important;display: inline-block; }
 .social-icons-middle .wpb_raw_html a > i{ font-size:22px;display: inline-block;vertical-align:middle;}
 .social-icons-middle .wpb_raw_html a:hover > i{color:#c03646;}
 .watch-trailer .nectar-button{margin-bottom:0;position: static;}
@@ -29,8 +29,9 @@ HomePage
 @media(max-width:1000px){
     /*hide slider content on mobile*/
     .parallax_slider_outer.first-section .swiper-slide .content{ display:none;}
-    .watch-trailer .nectar-button{border: none;font-weight: bold;margin-bottom: 0;}
-    #firstRow .watch-trailer{padding: 0 !important;padding-top: 5px !important;}
+    #firstRow .watch-trailer .nectar-button{border: none;font-weight: bold;margin-bottom: 0;}
+    #firstRow .watch-trailer .nectar-button:hover{background-color: transparent;}
+    #firstRow .watch-trailer{padding: 0 !important;}
     /*remove the extra space*/
     body #portfolio{ margin:0 !important; } 
 }
@@ -38,6 +39,11 @@ HomePage
 /*watch trailer*/
 @media only screen and (max-width: 690px){
     .pp_content .pp_inline iframe{height: 180px!important;}
+    .watch-trailer a { width: 100%; }
+}
+.pp_pic_holder .pp_close{ top: 8px; right: 0;}
+.pp_pic_holder #pp_full_res iframe[src='https://jp.surveymonkey.com/s/edcjapan']{
+   padding: 20px;background: #fff;border-radius: 5px;
 }
 
 /*essentials */
@@ -47,9 +53,18 @@ div.essentials-content .portfolio-items .col{margin-bottom:0 !important;}
 
 .xui_header_section a{color:#fff;}
 
-/*jp15*/
-@media only screen and (max-width: 1000px){
-    .watch-trailer a { width: 100%; }
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+}
+@media (max-width:1000px){
+    body.ascend{background-color:#f6f6f6;}
 }
 
 
@@ -94,7 +109,9 @@ body #ajax-content-wrap .wpb_gallery{margin-bottom: 0 !important;}
     .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
     .wpb_gallery .work-item .work-info{display:none;}
     .wpb_gallery #portfolio .work-item > img{ width:100% !important; }
+    .wpb_wrapper > .divider{display:none;}
 }
+.nectar-fancy-ul ul{margin-bottom:0;}
 
 
 
@@ -108,93 +125,17 @@ Health Page
 
 
 /**===================================================================================================
+Travel
+=====================================================================================================*/
+.gm-style > div:first-child > div:first-child > div:nth-child(4) > div{ overflow: visible !important; }
+.gm-style > div:first-child > div:first-child > div:nth-child(4) > div img{ top: 60px !important; }
+
+
+
+
+/**===================================================================================================
 Info
 =====================================================================================================*/
-/*--start of contact us style (please try to not change this block) -- */
-div.authentication-modalcontrols, div#attach-files-name{ padding-bottom: 7px; }
-#contact-us-form .wpcf7-mail-sent-ok{ display:none !important; }
-.required-field{ margin-left:0 !important; }
-#contact-us-form #uploadtextfield, 
-#contact-us-form .submit-button, 
-.email-sentok button{ background: #c03646 !important; }
-a#uploadtextfield:hover{opacity: 0.7;}
-#contact-us-form .submit-button:hover{ opacity:0.7; }
-.email-sentok button:hover{opacity:0.7;}
-
-#contact-us-form #uploadtextfield:before,
-#contact-us-form span.submit-button:before, .email-sentok button:before{
-   background: transparent !important; display:none;
-}
-#contact-us-form form input[type="text"]:focus,
-#contact-us-form form textarea:focus,
-#contact-us-form form input[type="email"]:focus,
-.form-item-category .selectric-focus .selectric{
-    border: 1px solid #c03646 !important;
-}
-.form-item-category .selectric .label:before{ border-bottom-color: #c03646 !important;}
-.form-item-category .selectric{width:100%;}
-.selectric-wrapper{width: 46%;}
-.selectric .label{margin: 0 38px 0 5px;}
-input#filesToUpload{display: none;}
-.selectric-input{visibility:hidden;}
-@media(max-width:1000px){
-    .required-field{padding-left: 1%;}
-    .sign-up-form{margin-bottom: 0 !important;}
-    .required-field{margin-left:5% !important;}
-    #contact-us-form .wpcf7-form .form-item-files .wpcf7-not-valid-tip { position: initial;}
-    .display-none-mobile{margin-bottom:0 !important;}
-    .selectric-wrapper{width: 100%;}
-    #contact-us-form .flexbox img.ajax-loader{ margin-top:0;}
-    #contact-us-form #attach-files-name{padding-left:8%;}
-}
-@media(min-width:1000px){
-    .sign-up-form>.wpb_wrapper{padding: 37px 30px 1px !important;}
-    div.authentication-modal-controls{ padding-bottom: 0px; padding-top: 7px;}
-}
-.error{ color:red; }
-.form-item-files{ display:none; }
-/*--end of contact us style (please try to not change this block) -- */
-
-
-/*make contact us image align with form*/
-@media (min-width: 768px){
-    #contact-us-form .sign-up-form > .wpb_wrapper{ margin-top:0; }
-    #contact-us-form .vc_col-sm-4 *,
-    #contact-us-form .vc_col-sm-4 .wpb_text_column img{ height:100%; }
-    #contact-us-form .sign-up-form{height: auto !important;}
-    #contact-us-form form input[type="text"], #contact-us-form form input[type="email"]{
-        padding: 8px 15px !important;
-    }
-}
-
-/* contact form style --added by daniel */
-.wpcf7-form ul li{
-    margin-top: 10px;
-    list-style-type: none;
-}
-.wpcf7-form ul > li > label{
-    text-transform: uppercase;
-}
-.wpcf7-form .flexbox input.wpcf7-form-control, 
-.wpcf7-form .flexbox select.wpcf7-form-control, 
-.wpcf7-form .flexbox textarea.wpcf7-form-control{
-    padding:5px !important;
-    background-color: #e6e7e8 !important;
-}
-.container-wrap .wpcf7-form .flexbox input[type="submit"]{
-    padding: 6px 55px !important;
-    font-size:16px; text-transform: uppercase;
-    background-color: #1465c0!important;
-}
-.wpcf7-form .flexbox .wpcf7-checkbox > span{ display: block; }
-/* end of contact form style */
-
-
-
-
-/************************************************
-Info Page
-*************************************************/
 @media (max-width: 1000px){
     #ajax-content-wrap .wpb_row .text-center{margin:0 !important;padding-bottom:0 !important;}
     .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
@@ -218,6 +159,7 @@ body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7" !importan
     #header-outer .header-logos{display:none;}
     #header-outer.small-nav .header-logos{display:block;}
 }
+#header-outer{border: none!important;}
 #header-outer.transparent header#top nav ul.sf-menu>li>a{
     color: #FFF;opacity: 1 !important; transition: none !important;
 }
@@ -239,6 +181,7 @@ body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7" !importan
 html[lang="en"] .sponsor-row-2, html[lang="en"] #sponsors{display: none;}
 .sponsor-row-2 .no-link > img{display: none;}
 .sponsor-row-2 .clients > div{ margin-bottom:0 !important; }
+.container.footer-content .carousel.clients > div:hover{opacity: 0.7 !important;}
 @media (min-width: 690px){
     .sponsor-row-2 .clients{ text-align:center; }
     .sponsor-row-2 .clients > div{ float:none;display: inline-block;float: none; }
@@ -256,14 +199,34 @@ html[lang="en"] .sponsor-row-2, html[lang="en"] #sponsors{display: none;}
 @media (min-width:1001px){
     .single-post #header-outer:not(.small-nav) .header-logos{display: block;top: 16px;right: 90px;}
     #single-meta .nectar-social{display:block;}
+    body.single-post .nectar-sharing:hover i{color: #999 !important;}
 }
 @media (max-width:1000px){
     body.single-post #footer-socails-nav .nectar-sharing:hover i{color: #fff !important;}
+    .single-post article.post .content-inner{ padding-bottom:0; }
+    .single-post #ajax-content-wrap .main-content{padding:0!important;}
+    .single-post #ajax-content-wrap #post-area article, 
+    .single-post #ajax-content-wrap .main-content .heading-title{
+        margin-left:5% !important;margin-right:5% !important; 
+    }
+    .single-post #ajax-content-wrap .wpb_row{margin-bottom:0;}
+    .single .heading-title{padding-bottom: 10px;margin-bottom: 25px;}
 }
 
 /*fix header menu hard read problem author:yaxing*/
 .page-header-bg-image{opacity:0.8;}
 
+/*insomniac-socail-bar*/
+#socail-bar-row{z-index:20;}
+.insomniac-socail-bar a.btn-newsletter-signup{
+    color: #fff;border: 2px solid rgba(255,255,255,0.75);
+    height: 31px;line-height: 27px;padding: 0px 10px !important;display: inline-block !important;
+    margin-left: 8px;cursor: pointer;}
+.insomniac-socail-bar a i:hover{color:#c03646;}
+.insomniac-socail-bar a.btn-newsletter-signup:hover{background-color:#c03646; border-color:#c03646;}
+@media (max-width:1000px){
+    .insomniac-socail-bar{text-align: center;margin-bottom: 0 !important;}
+}
 
 
 
@@ -273,17 +236,11 @@ html[lang="en"] .sponsor-row-2, html[lang="en"] #sponsors{display: none;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/**temp**/
+.mfp-wrap.mfp-ready .mfp-content{margin: 0 auto;width: auto;}
+.mfp-wrap.mfp-ready .mfp-content .white-popup{background: #fff;border-radius: 5px;}
+.mfp-wrap.mfp-ready .mfp-content iframe{padding: 30px 15px 30px;}
+.mfp-wrap.mfp-ready .mfp-content .mfp-close{top: -5px;right: -5px;}
 
 
 
