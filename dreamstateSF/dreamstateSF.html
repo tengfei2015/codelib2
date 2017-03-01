@@ -1,0 +1,45 @@
+#6e30d5
+
+#footer widgets
+
+<a href="https://www.facebook.com/beyondwonderland/" target="_blank" ><i class="icon-normal fa-facebook accent-color"></i></a>
+<a href="https://twitter.com/beyondwland" target="_blank" ><i class="icon-normal fa-twitter accent-color"></i></a>
+<a href="https://instagram.com/beyondwland/" target="_blank" ><i class="icon-normal fa-instagram accent-color"></i></a>
+<a title="Add to Calendar" class="addeventatc">
+    <i class="icon-normal fa-calendar accent-color"></i>
+    <span class="start" >03/24/2017 04:00 PM</span>
+    <span class="end">03/25/2017 02:00 AM</span>
+    <span class="timezone">America/Los_Angeles</span>
+    <span class="title">Beyond Wonderland 2017</span>
+    <span class="description">Join Insomniac for the best electronic dance music experience in Southern California</span>
+    <span class="location">NOS Events Center</span>
+    <span class="organizer">Insomniac</span>
+    <span class="organizer_email">Organizer e-mail</span>
+    <span class="all_day_event">false</span>
+    <span class="date_format">MM/DD/YYYY</span>
+</a>
+
+<style>
+@media (min-width: 1001px){
+    .single-sponsor .caroufredsel_wrapper .clients{ width:100%!important;text-align: center !important; }
+    .single-sponsor .caroufredsel_wrapper .clients > div{width:22% !important;display: inline-block;float: none;}
+}
+@media(max-width: 1000px){
+    .single-sponsor .brand-sponsor .carousel-wrap{ padding:0; }
+}
+.social-bar-mobile a i { color: #6e30d5 !important; }
+</style>
+
+<script type="text/javascript">
+(function($){
+$(function(){
+    $(".home_slider .buttons a").each(function(){
+        var link = $(this).attr('href');
+        if(link == '/tickets/#ga' || link.indexOf("lineup")){
+            $(this).attr('target', '_self');
+        }
+    });
+});
+})(jQuery);
+</script>
+

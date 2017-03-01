@@ -22,6 +22,19 @@ update wp_27_options set option_value = 'http://japan2017.local.multisite2.com/'
 update wp_27_options set option_value = 'http://japan2017.local.multisite2.com/' where option_id=2;
 update wp_28_options set option_value = 'http://vegas2017.local.multisite2.com/' where option_id=1;
 update wp_28_options set option_value = 'http://vegas2017.local.multisite2.com/' where option_id=2;
+update wp_29_options set option_value = 'http://dreamstateuk.local.multisite2.com/' where option_id=1;
+update wp_29_options set option_value = 'http://dreamstateuk.local.multisite2.com/' where option_id=2;
+update wp_30_options set option_value = 'http://edcjapan2017.local.multisite2.com/' where option_id=1;
+update wp_30_options set option_value = 'http://edcjapan2017.local.multisite2.com/' where option_id=2;
+update wp_31_options set option_value = 'http://beyondsocal2017.local.multisite2.com/' where option_id=1;
+update wp_31_options set option_value = 'http://beyondsocal2017.local.multisite2.com/' where option_id=2;
+update wp_32_options set option_value = 'http://japan2017-fullsite.local.multisite2.com/' where option_id=1;
+update wp_32_options set option_value = 'http://japan2017-fullsite.local.multisite2.com/' where option_id=2;
+update wp_33_options set option_value = 'http://beyondwonderland-mexico2017.local.multisite2.com/' where option_id=1;
+update wp_33_options set option_value = 'http://beyondwonderland-mexico2017.local.multisite2.com/' where option_id=2;
+update wp_34_options set option_value = 'http://dreamstate2017.local.multisite2.com/' where option_id=1;
+update wp_34_options set option_value = 'http://dreamstate2017.local.multisite2.com/' where option_id=2;
+
 #wp_blogs
 update wp_blogs set domain='local.multisite2.com' where blog_id=1;
 update wp_blogs set domain='orlando2016.local.multisite2.com' where blog_id=19;
@@ -34,6 +47,13 @@ update wp_blogs set domain='countdown2016.local.multisite2.com' where blog_id=25
 update wp_blogs set domain='middlelands2017.local.multisite2.com' where blog_id=26;
 update wp_blogs set domain='japan2017.local.multisite2.com' where blog_id=27;
 update wp_blogs set domain='vegas2017.local.multisite2.com' where blog_id=28;
+update wp_blogs set domain='dreamstateuk.local.multisite2.com' where blog_id=29;
+update wp_blogs set domain='edcjapan2017.local.multisite2.com' where blog_id=30;
+update wp_blogs set domain='beyondsocal2017.local.multisite2.com' where blog_id=31;
+update wp_blogs set domain='japan2017-fullsite.local.multisite2.com' where blog_id=32;
+update wp_blogs set domain='beyondwonderland-mexico2017.local.multisite2.com' where blog_id=33;
+update wp_blogs set domain='dreamstate2017.local.multisite2.com' where blog_id=34;
+
 #wp_domain_mapping
 update wp_domain_mapping set domain='orlando2016.local.multisite2.com' where blog_id=19;
 update wp_domain_mapping set domain='escape2016.local.multisite2.com' where blog_id=20;
@@ -45,3 +65,8 @@ update wp_domain_mapping set domain='countdown2016.local.multisite2.com' where b
 update wp_domain_mapping set domain='middlelands2017.local.multisite2.com' where blog_id=26;
 update wp_domain_mapping set domain='japan2017.local.multisite2.com' where blog_id=27;
 update wp_domain_mapping set domain='vegas2017.local.multisite2.com' where blog_id=28;
+update wp_domain_mapping set domain='dreamstateuk.local.multisite2.com' where blog_id=29;
+update wp_domain_mapping set domain='beyondsocal2017.local.multisite2.com' where blog_id=31;
+update wp_domain_mapping set domain='japan2017-fullsite.local.multisite2.com' where blog_id=32;
+update wp_domain_mapping set domain='beyondwonderland-mexico2017.local.multisite2.com' where blog_id=33;
+update wp_domain_mapping set domain='dreamstate2017.local.multisite2.com' where blog_id=34;
