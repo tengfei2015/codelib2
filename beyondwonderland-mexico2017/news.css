@@ -1,0 +1,72 @@
+.posts-container article .post-header h2 a {font-weight: bold;}
+.post-header .meta-category a{pointer-events: none;cursor: default;}
+#post-area .posts-container article .post-content:hover {color: #4f7015 !important;}
+
+@media (min-width:767px){
+    #post-area .posts-container article{min-height: 340px;}
+    /*post card shadow*/
+	#post-area .posts-container  article:hover{ 
+        transform: scale(1.005);box-shadow: 5px 5px 15px 5px rgba(0,0,0,.26) !important; 
+    }
+	/*post card date style*/
+    #post-area.masonry .posts-container article.post .post-meta{
+        position:absolute !important;
+        padding:0px 0px 0px 18px !important;
+        margin-bottom:0px !important;
+        bottom:2px !important;
+        top:inherit !important;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .blog-fullwidth-wrap #post-area.masonry {
+        margin-bottom: 80px !important;
+    }
+}
+
+/** Desc: Read More Link, author: Tengfei Date:2016-6-14 */
+#post-area .posts-container article .post-content .content-inner{ 
+	position:static;
+}
+#post-area .posts-container article .post-content .more-link{ 
+	position: absolute; display:block !important;
+	bottom: 2px;
+	right: 7px;
+}
+#post-area .posts-container article .post-content .more-link .continue-reading{
+	color: #4f7015;
+	background: transparent !important;
+}
+#post-area article .post-header>span {
+    display: none !important;
+}
+
+/** Desc:MX42 & MX43 author: Tengfei Date:2016-8-22 */
+@media(max-width: 1000px) {
+    #post-area{ background: #fff; }
+    #post-area.masonry article.post .post-meta{ height:40px; }
+    #post-area.masonry article.post .post-meta .date{ position: absolute; bottom: 3px; }
+}
+/*fix sticky issue,author:yaxing*/
+.sticky .content-inner{
+    padding:0 !important;
+}
+.sticky .content-inner {
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,0);
+}
+
+/*new styles*/
+@media (min-width: 1001px){
+	.blog-fullwidth-wrap #post-area.masonry{margin-bottom: 25px !important;}
+}
+@media(max-width:1000px){
+	#ajax-content-wrap .blog-fullwidth-wrap{padding:0 !important;width: 100% !important;}
+	#ajax-content-wrap  #post-area .posts-container article{margin-bottom:0 !important;}
+	.blog-fullwidth-wrap #post-area.masonry{margin-bottom:0 !important;}
+}
+
+#post-area .post-content .post-meta .date { color: #888; }
+#post-area .post-content:hover .post-meta .date { color: #4f7015; }
