@@ -1,0 +1,45 @@
+
+
+<div id="youtube-video">
+<iframe id="watch-trailer-list" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtZ1Nsu2D5r2L5Klnp8L7SVa1JrDKrnmn" frameborder="0"></iframe>
+</div>
+
+
+<script type="text/javascript">
+(function($){
+    $(function(){
+        $(".watch-trailer-button .nectar-button").click(function(){
+            setTimeout(function(){
+                window.dispatchEvent(new Event('resize'));
+            }, 1000);
+        });
+        
+        //newsletter
+        window.icModal = new insomniac.customModal(".insomniac-customModal");
+        $('.btn-newsletter-signup').click(function(){
+            icModal.show();return false;
+        });
+    });
+})(jQuery);
+</script>
+
+
+
+
+
+
+###newsletter custom js footer
+<div class="insomniac-customModal" style="display: none;" >
+    <div class="insomniac-customModal-container"><span class="icon-salient-x close"></span>
+        <div class="insomniac-customModal-content">
+            <div id="embedded-app-439120" style="width: 100%;" ></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" >
+if (typeof window.loadTradablebitsApp !== 'function') {
+jQuery.getScript('https://tradablebits.com//embedded.js', function() {
+loadTradablebitsApp('embedded-app-439120',439120);
+});
+}
+</script>

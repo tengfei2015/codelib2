@@ -210,6 +210,13 @@ body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7"!important
 #side-nav-tix .slide-nav li a.checked{ background: #4f7015 !important; }
 #side-nav-tix .slide-nav li a:hover{ background-color: #87ba2f !important; }
 
+div#footer-button { background: #6A346D !important; }
+.insomniac-customModal .insomniac-customModal-content{overflow: hidden;}
+.insomniac-customModal .insomniac-customModal-content > div{margin-bottom:-100px;}
+@media (min-width:1001px){
+    .insomniac-customModal .insomniac-customModal-container{width: 600px;margin-left: -300px;}
+}
+
 
 
 
