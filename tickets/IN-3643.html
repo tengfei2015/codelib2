@@ -1,0 +1,11 @@
+<script type="text/javascript">
+(function($){
+    window.wpcf7recaptchaCallback = function(){
+        console.log('kkkkkkkkkkkkkkkkkkkkkkkk');
+        var offset = $("form.wpcf7-form").offset().top;
+        $(window).scrollTop(offset);
+    }
+})(jQuery);
+var cfcaptcha = document.querySelector("div.wpcf7-recaptcha");
+cfcaptcha.setAttribute('data-callback', 'wpcf7recaptchaCallback');
+</script>

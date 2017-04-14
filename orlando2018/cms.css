@@ -81,11 +81,6 @@ HomePage
 /**===================================================================================================
 Salient
 =====================================================================================================*/
-.full-width-section.parallax_section .row-bg-wrap,
-.full-width-content.parallax_section .row-bg-wrap {
-    filter: brightness(80%);
-    -webkit-filter: brightness(80%);
-}
 /*fix sponsor issue,yaxig*/
 .sponsors_orlando .clients.six-cols.no-carousel > div{
     width: 12%;
@@ -118,9 +113,8 @@ body #mobile-menu li.open > a .icon-angle-down:before{ content:"\f0d7"!important
 .xui_header_section h2 > strong, .parallax_header_section h2 > strong{ text-transform: uppercase; }
 .full-width-section.parallax_section .row-bg-wrap,
 .full-width-content.parallax_section .row-bg-wrap{filter:brightness(80%);-webkit-filter:brightness(80%);}
-@media (min-width: 1001px){
-    .header-section-bg-color h2 > strong, .parallax_header_section h2 > strong,
-    .xui_header_section h2 > strong{ letter-spacing: 5px; }
+@media(max-width: 1000px){
+    .wpb_row.parallax_section{display:none;}
 }
 
 /*sponsor*//*social-channels*/
