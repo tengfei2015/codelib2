@@ -1,0 +1,50 @@
+
+
+
+
+
+
+/*seamless-gallery*/
+.wpb_gallery.seamless-gallery .portfolio-items{margin:0 !important;background-color:#000;}
+.wpb_gallery.seamless-gallery .portfolio-items .col .work-item.style-3 .work-info-bg{display:none !important;}
+@media (min-width: 1001px) {
+    .wpb_gallery.seamless-gallery .portfolio-items .col.span_3{
+        width: 24.9% !important;margin: 0!important;
+    }
+}
+@media (max-width: 1000px) and (min-width: 690px){
+	.wpb_gallery.seamless-gallery .portfolio-items:not(.carousel) .col.span_4, 
+	.wpb_gallery.seamless-gallery .portfolio-items:not(.carousel) .col.span_3 {
+	    width: 49.9%!important;margin: 0!important;
+	}
+}
+@media (max-width: 1000px){
+    .wpb_gallery.seamless-gallery .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
+    .wpb_gallery.seamless-gallery .work-item .work-info{display:none;}
+    .wpb_gallery.seamless-gallery .portfolio-items .work-item > img{ width:100% !important; }
+    .wpb_gallery.seamless-gallery .portfolio-items .col.span_3{margin:0 !important;}
+}
+
+
+/*
+Info Page
+*/
+.contact-us-form form{ margin-bottom:50px;margin-top:0 !important; }
+.contact-us-form .button-group button.addattach { margin-right: 60px;width:auto;padding:0 10px; }
+.contact-us-form div.wpcf7{margin-top:0 !important; }
+@media (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
+    .wpb_row{margin-bottom:0;}
+    .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
+    .vc_col-sm-2.age-id{width:100% !important;}
+}
+#contact-image { z-index: -1; }
+
+
+
+.channels a i{ font-size: 18px; }
+@media(max-width:1000px){
+    .channels a i{ font-size: 20px;margin:0 5px; }
+}
+
+
