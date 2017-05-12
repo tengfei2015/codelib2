@@ -1,0 +1,102 @@
+
+/**===================================================================================================
+HomePage 
+=====================================================================================================*/
+
+/*social icons*/
+.social-icons-middle a:not(#newsletter-signup){ vertical-align: -2px; }
+.social-icons-middle .wpb_raw_html a > i{ font-size:22px;display: inline-block;vertical-align:middle;}
+#firstRow{z-index:99;}
+.addeventatc .copyx{display:none!important;}
+@media(max-width:1000px){
+    /*hide slider content on mobile*/
+    .parallax_slider_outer.first-section .swiper-slide .content{ display:none;}
+    /*remove the extra space*/
+    body #portfolio{ margin:0 !important; } 
+}
+
+/*watch trailer*/
+@media only screen and (max-width: 690px){
+    .pp_content .pp_inline iframe{height: 180px!important;}
+}
+
+/*essentials */
+.portfolio-items .col .work-item.style-3 .work-info-bg{display:none;}
+.portfolio-items .col .work-item.style-3 .vert-center h3{font-size: 24px; font-weight: bold; }
+
+.addthisevent-drop{display:none !important;}
+
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap > div:first-child .container{ max-width: none !important;padding: 0 !important; }
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+}
+@media (max-width:1000px){
+    body.ascend{background-color:#f6f6f6;}
+    .youtube-video .hide_, .youtube-video .hide_ .iframe-embed { margin-bottom: 0 !important; }
+}
+
+body.home #header-outer.transparent header#top nav ul.sf-menu>li>a{
+    text-shadow: 0px 0px 10px rgba(0,0,0, 0.2);
+}
+.slider-post-container .post-content .article-content { padding-top: 5px !important; }
+/*slider post title hover color*/
+.slider-post-container .post-content .article-content .title:hover{
+    color: #A80000 !important;
+}
+
+.slider-post-container .post-content .post-featured-img{ height:auto !important; }
+
+#firstRow{z-index:11;}
+.add-calendar-column{z-index:20;}
+
+.wpb_raw_html.insomniac-socail-bar a i:hover {
+    color: #a80000 !important;
+}
+
+
+#firstRow-mobile .wpb_column{padding:1% !important;}
+#firstRow-mobile a.btn-newsletter-signup{height: 33px;line-height: 29px; }
+
+
+
+/**===================================================================================================
+ Experince Page 
+=====================================================================================================*/
+.portfolio-items .col .work-item.style-3 .work-info-bg{display:none;}
+.portfolio-items .work-item.style-3 img{transform: none !important;}
+.wpb_gallery{margin-bottom: 0 !important;}
+@media only screen and (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > h3 > img{ width:100%; }
+    .wpb_wrapper .divider-wrap > .divider{display:none;}
+
+    .parallax_section{padding:0 !important;}
+}
+#performers{ margin-top:-2px; }
+
+@media only screen and (max-width: 1000px){
+    #fix_bottom .wpb_wrapper { margin-bottom: -1px !important; }
+}
+.nectar-button.regular-button.extra-color-1{
+    background-color: #1A81BC!important;
+}
+@media(max-width:1000px){
+    #view-lineup-img .view-lineup, #view-lineup-img .img-with-aniamtion-wrap:nth-child(2) {
+        padding-bottom: 4% !important;
+    }
+    .container.main-content { padding-bottom:0!important; }
+}
+
+
+
+.main-content .wpb_text_column a{ color:#000; }
+
+
+
+
