@@ -1,29 +1,9 @@
 
 
+/*update color code*/
+.wpb_raw_html.insomniac-socail-bar a i:hover{ color:#000!important;}
 
 
-
-
-/*seamless-gallery*/
-.wpb_gallery.seamless-gallery .portfolio-items{margin:0 !important;background-color:#000;}
-.wpb_gallery.seamless-gallery .portfolio-items .col .work-item.style-3 .work-info-bg{display:none !important;}
-@media (min-width: 1001px) {
-    .wpb_gallery.seamless-gallery .portfolio-items .col.span_3{
-        width: 24.9% !important;margin: 0!important;
-    }
-}
-@media (max-width: 1000px) and (min-width: 690px){
-	.wpb_gallery.seamless-gallery .portfolio-items:not(.carousel) .col.span_4, 
-	.wpb_gallery.seamless-gallery .portfolio-items:not(.carousel) .col.span_3 {
-	    width: 49.9%!important;margin: 0!important;
-	}
-}
-@media (max-width: 1000px){
-    .wpb_gallery.seamless-gallery .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
-    .wpb_gallery.seamless-gallery .work-item .work-info{display:none;}
-    .wpb_gallery.seamless-gallery .portfolio-items .work-item > img{ width:100% !important; }
-    .wpb_gallery.seamless-gallery .portfolio-items .col.span_3{margin:0 !important;}
-}
 
 
 /*

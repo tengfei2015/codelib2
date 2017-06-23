@@ -1,0 +1,239 @@
+
+/**===================================================================================================
+HomePage 
+=====================================================================================================*/
+/*tengfei: color update */
+.xui_header_section .wpb_text_column a{color:#fff;}
+.wpb_raw_html.insomniac-socail-bar a i:hover{color:#1f1f1f!important;}
+
+.slider-post-container .post-content{color:#000 !important;}
+.slider-post-container .post-content .article-content .title{ color: #000 !important; }
+.slider-post-container .post-content .article-content .title:hover{color:#a10f03 !important;}
+
+/*daniel: fix homepage image diplaying as parallax*/
+.container.footer-content { z-index: 2; }
+.newsletter-btn.hide-on-mobile  { z-index: -1; }
+#gallery-content-home  { z-index: 1; }
+
+/*white space under video - mobile*/
+@media(max-width: 1000px){
+    .video-container, .video-container .iframe-embed { margin-bottom: 0 !important; }
+
+    /*reduce height social bar - mobile*/
+    #firstRow .social-icons-middle { padding: 0 !important; }
+    
+    /*hide nectar text*/
+    .home_slider .content h2:not(.hide-on-desktop), 
+    .home_slider .content p { display: none; }
+}
+#gallery-title { margin-top: -1px; }
+
+#ajax-content-wrap .home_slider .content{margin-top: 73px !important;}
+
+@media (min-width: 1001px){
+	.wpb_raw_html.insomniac-socail-bar a.btn-newsletter-signup.hide-on-desktop{ display: none !important; }
+}
+.wpb_raw_html.insomniac-socail-bar a.btn-newsletter-signup:hover{background-color: #1f1f1f;border-color: #1f1f1f; }
+
+
+
+/**===================================================================================================
+Tickets Page
+=====================================================================================================*/
+/*active tier same height*/
+.pricing-column.highlight {
+    position: initial;
+    z-index: initial;
+    margin: initial;
+}
+
+@media only screen and (min-width: 1001px) {
+    .buy-ticket .pricing-column .pricing-column-content {
+        min-height: 164px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .highlight {
+        transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -webkit-transform: scale(1,1);
+        -o-transform: scale(1,1);
+    }
+}
+
+.container-wrap{ padding-bottom:0 !important; }
+
+@media(max-width: 1000px){
+    .explore .text-center:not(.add-pack) { margin-top: -28px !important; }
+    .text-center.locker-text { padding-bottom: 25px; }
+    .gallery-button p:last-child { padding-bottom: 27px !important; }
+}
+
+#vip-par { margin-bottom: -1px; }
+
+.ticket-box .pricing-table { margin-top: 0 !important; }
+.ticket-box .pricing-column { float: none !important; }
+.pricing-column .interval {
+	display: none;
+}
+
+@media(max-width: 1000px){
+    #ticket-faq-list { margin-bottom: 0 !important; }
+}
+
+.pricing-table[data-style="default"] .pricing-column h4 .dollar-sign {
+    font-size: 28px !important;
+    line-height: 28px !important;
+}
+
+
+/**===================================================================================================
+COMMUNITY
+=====================================================================================================*/
+@media(max-width:1000px){
+  .ch-list-1 { margin-bottom: -45px !important; }
+}
+#wellness101 .mobile-align .wpb_text_column .wpb_wrapper p{
+    margin-left:10px !important;
+}
+.main-content ul, .main-content ol { margin-bottom:0 !important; }
+.container-wrap{ padding-bottom:0 !important; }
+@media(max-width: 1000px){
+    .hide-divider .divider-wrap { display: none; }
+    #list-charitable { margin-bottom: 0 !important; }
+    #ajax-content-wrap #list-charitable .ch-list-1 { padding-top: 0 !important; }
+    .full-width-img img { width: 100% !important; }
+}
+#charity, #ground-control { margin-top: -1px; }
+
+.wpb_row.fix-bottom-white-line .vc_col-sm-6{height:auto !important;}
+.wpb_row.fix-bottom-white-line .vc_col-sm-6 img{display:block;}
+
+
+
+/**===================================================================================================
+NEWS
+=====================================================================================================*/
+@media (min-width:767px) {
+    #post-area article .post-content{min-height: 360px !important; }
+}
+@media (min-width:2200px){
+    #post-area article .post-content{min-height: 400px !important;}
+}
+
+.blog-fullwidth-wrap #post-area.masonry {
+    margin-bottom: 0px !important;
+}
+#post-area .post-content .post-header .title:hover a{
+    color: #A80000 !important;
+}
+
+.infscr-loading-wrap { display: none !important; }
+
+#sliderblog-row article .title a{color:#000 !important;}
+#sliderblog-row article .post-content .post-meta .date {color:#000;}
+#sliderblog-row article .post-content .article-content .title{ color: #000 !important; }
+#sliderblog-row article .post-content .article-content .title:hover{color:#a10f03 !important;}
+
+
+
+/**===================================================================================================
+Info
+=====================================================================================================*/
+.contact-us-form form{ margin-bottom:50px;margin-top:0 !important; }
+.contact-us-form .button-group button.addattach { margin-right: 60px;width:auto;padding:0 10px; }
+.contact-us-form div.wpcf7{margin-top:0 !important; }
+@media (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
+    .wpb_row{margin-bottom:0;}
+    .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
+    .vc_col-sm-2.age-id{width:100% !important;}
+}
+#contact-image { z-index: -1; }
+
+.contact-us-form .button-group .addattach,
+.contact-us-form .button-group .submit-button, .email-sentok button{ background: #6c0e0a !important; }
+.contact-us-form .selectric .label:before { border-bottom-color: #6c0e0a !important; }
+
+@media(max-width:1000px){
+    .main-content ul, .main-content ol{margin-left: 5% !important;}
+    #faq-intro { margin-top: 5% !important; }
+    .totem-img { margin-top: 25px; }
+}
+
+#ID h4.nowrap{white-space: nowrap;}
+
+
+/**===================================================================================================
+SKYDECK INQUIRY FORM
+=====================================================================================================*/
+#inquiry-form-area{}
+.hide{display:none!important;}
+#form_sent_ok{display:none;}
+
+.container-wrap{padding-bottom:0!important;}
+.container-wrap .wpcf7-form .flexbox input[type="submit"]:hover{opacity: 0.7;}
+.container-wrap .wpcf7-form .flexbox input[type="submit"]{background-color: #6c0e0a !important;}
+
+@media (min-width:1440px) {
+    #page-header-wrap #page-header-bg{background-position:0 -50px;}
+}
+@media (min-width:1920px) {
+    #page-header-wrap #page-header-bg{background-position:0 -120px;}
+}
+
+/*** custom checkboxes ***/
+input[type=checkbox]#signup { display:none; } /* to hide the checkbox itself */
+input[type=checkbox]#signup + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 22px;
+  vertical-align: sub;
+}
+input[type=checkbox]#signup + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox]#signup + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]#signup:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]#signup:checked + label:before { letter-spacing: 7px; } /* allow space for check mark */
+
+
+/******wpcf7-form********/
+.wpcf7-form ul li{margin-top:10px;list-style-type:none;}
+.wpcf7-form ul > li > label{text-transform:uppercase;display: block;}
+.wpcf7-form .flexbox input.wpcf7-form-control,
+.wpcf7-form .flexbox select.wpcf7-form-control,
+.wpcf7-form .flexbox textarea.wpcf7-form-control{padding:5px!important;background-color:#e6e7e8 !important}
+.container-wrap .wpcf7-form .flexbox input[type="submit"]{padding:6px 55px !important;font-size:16px;text-transform:uppercase;}
+.wpcf7-form .flexbox .wpcf7-checkbox>span{display:block}
+
+/*mobile UI*/
+@media (max-width:768px) {
+    .wpcf7-form ul{margin:0!important;}
+    #form_sent_ok{margin-bottom:0;}
+    #form_sent_ok .wpb_text_column p{padding:0;}
+    #form_sent_ok .wpb_text_column img{width:100%;margin:0;}
+}
+
+
+
+/**===================================================================================================
+Salient
+=====================================================================================================*/
+header .header-logos{width: auto;display: inline-block;}
+
+.full-width-section.parallax_section .row-bg-wrap,
+.full-width-content.parallax_section .row-bg-wrap {
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+}
+.container.main-content > div.row > div:first-child { margin-top: -1px; }
+
+/*update color codes*/
+body #footer-outer a:hover{color:#a10f03 !important;}
+.footer-sticky-nav{background: #1f1f1f !important;}
+.default-loading-icon:before { border-top-color: #1f1f1f !important; }
+
+.single-post .post-content .content-inner > p{ padding-bottom:15px;}
+
