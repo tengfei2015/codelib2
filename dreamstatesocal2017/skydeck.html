@@ -1,0 +1,65 @@
+﻿<script type="text/javascript">
+window.inquiryForm = window.inquiryForm || {};
+inquiryForm.sendToSevenroom = function(siteName){
+    var data = {};
+    var email = $('#inquiry-form-area input[name=email]').val();
+    if (email){
+        data['email'] = email;
+    }
+    var first_name = $('#inquiry-form-area input[name=first_name]').val();
+    if (first_name){
+        data['first_name'] = first_name;
+    }
+    var last_name = $('#inquiry-form-area input[name=last_name]').val();
+    if (last_name){
+        data['last_name'] = last_name;
+    }
+    var phone = $('#inquiry-form-area input[name=phone]').val();
+    if (phone){
+        data['phone_number'] = phone;
+    }
+    var guest_number = $('#inquiry-form-area select[name=guest_number]').val();
+    if (guest_number) {
+        data['party_size'] = guest_number;
+    }
+
+    var questions = $('#inquiry-form-area textarea[name=questions]').val();
+    data['client_request'] = questions;
+
+    data['custom_1_label'] = 'Event Name';
+    data['custom_1'] = siteName;
+    data['secret_key'] = "5c2660b60a60f304afc1071fc2f3a230393770769c7adda88b44ff33bd3918be";
+    data['request_class'] = "table";
+	
+    var favorites = [];
+    $.each($("input[name='date[]']:checked"), function(){            
+        favorites.push($(this).val());
+    });
+
+    if (favorites.indexOf('FRIDAY, OCTOBER 27')!=-1){
+        data['date'] = '2017-10-27';
+        if (favorites.indexOf('SATURDAY, OCTOBER 28')!=-1){ 
+             data['custom_2_label'] = 'Another date';
+             data['custom_2'] = '2017-10-28';
+        }
+    } else {
+        data['date'] = '2017-10-28';
+    }
+	
+    $.ajax({
+        type: "POST",
+        url: "//www.sevenrooms.com/api/1_0/venue/edc/custom-request/create",
+        data: data,
+        crossDomain: true,
+        success: function (data, status, jqXHR) {
+              console.log(data);  
+        },
+        error: function (jqXHR, status) {
+            //error handler
+            console.log(status);
+        }
+    });
+}
+
+//inquiryForm.sendToSevenroom('DREAMSTATE_SOCAL_2017');
+</script>
