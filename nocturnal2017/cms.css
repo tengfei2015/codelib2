@@ -1,0 +1,280 @@
+/**===================================================================================================
+HomePage 
+=====================================================================================================*/
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+    
+    /**social icons hover color**/
+    .wpb_raw_html.insomniac-socail-bar a i:hover{color: #189af5 !important; }
+}
+
+/*hide slider content on mobile*/
+@media (max-width: 1000px){
+    .home_slider .content{display:none !important;}
+    .wpb_raw_html.insomniac-socail-bar{
+        padding: 6px 5px 4px;
+    }
+    #firstRow-mobile a.xui-mobile-button{
+        padding: 15px 0;
+    }
+}
+@media (min-width: 1000px){
+    #ajax-content-wrap .swiper-slide .content{margin-top:40px!important;}
+    #ajax-content-wrap .swiper-slide .content h2 {
+        font-size: 60px;margin-bottom: 20px;letter-spacing: 0;
+    }
+    #ajax-content-wrap .swiper-slide .content p {line-height: 1.5em!important;margin-top: 20px;}
+}
+.wpb_text_column a{color: #fff !important;}
+
+#myVideo .wpb_raw_html, 
+#myVideo .wpb_raw_html .iframe-embed{margin-bottom: 0 !important;}
+#firstRow,#firstRow-mobile{z-index:11;}
+#firstRow .addthisevent-column{z-index:99;}
+
+#posts-row .slider-post-container{overflow:visible;}
+#posts-row .slider-post-container .post-content .article-content .title { color: #000; }
+#posts-row .slider-post-container .post-content .article-content 
+.title:hover { color: #2a34f7 !important; }
+#posts-row .slider-post-container .post-content .post-date { color: #000; }
+#posts-row .slider-post-container .post-content:hover { color: #000; }
+
+
+
+
+
+/**===================================================================================================
+TICKETS
+=====================================================================================================*/
+/*pricing table*/
+#ga-content .pricing-table.tickets{margin-top:0;}
+#ga-content .pricing-table.tickets .pricing-column{width:100%;}
+#ga-content .pricing-table.tickets .pricing-column .interval{display:none;}
+#layaway-content .pricing-table.tickets{margin:20px 0!important;padding:0 !important;}
+
+#ajax-content-wrap .container-wrap{padding-bottom:0;}
+
+@media(max-width: 1000px){
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .hide-divider-mobile .divider-wrap { display: none; }
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{
+        border-left: 1px solid #e4e4e4!important;
+    }
+}
+
+
+
+
+
+/**===================================================================================================
+Experience Page
+=====================================================================================================*/
+.wpb_gallery .portfolio-items .work-item > img{ transform:none !important; }
+.wpb_gallery .portfolio-items .work-item .work-info-bg{display:none !important;}
+
+/*fix white line*/
+#performers{margin-top:-1px;}
+
+/*wpb_gallery*/
+.wpb_gallery.performers-gallery{margin:24px 0;}
+.wpb_gallery .portfolio-items > .col{margin-bottom:0 !important;}
+
+@media(max-width:1000px){
+    .main-content .divider{display:none;}
+    .view-lineup-btn .nectar-button{top: 0;margin: 20px;}
+}
+
+
+/**===================================================================================================
+COMMUNITY
+=====================================================================================================*/
+@media (max-width: 690px){
+    #our-headliners .col h2{font-size: 20px;line-height: 20px;}
+}
+@media (max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper > p > img{ width:100%; }
+    .divider{display:none;}
+    .text-center ul{margin-bottom:0;}
+}
+.wpb_row.fix-bottom-white-line .vc_col-sm-6{height:auto !important;}
+.wpb_row.fix-bottom-white-line .vc_col-sm-6 img{display:block;}
+
+
+/**===================================================================================================
+CAMPING
+=====================================================================================================*/
+#prem-camp table, #prem-camp td{border: none !important; background-color: #fff;}
+@media (max-width: 1000px){
+    .wpb_row.parallax_section{display: block;}
+    #ajax-content-wrap .main-content > .row > .vc_row.header-section-gray{padding: 10px 0 !important;}
+}
+/*pricing-table*/
+.pricing-table.tickets{margin-top:0;}
+.pricing-table.tickets .pricing-column{width:100%;}
+.pricing-table.tickets .pricing-column .interval{display:none;}
+@media(max-width: 1000px){
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+}
+/*text-center*/
+@media(max-width:1000px){
+    .text-center ul{margin-left: 15px;}
+    .text-center .wpb_wrapper p:last-of-type{padding-bottom:0;}
+    .wpb_text_column img{width:100% !important;}
+}
+
+
+
+
+/**===================================================================================================
+TRAVEL
+=====================================================================================================*/
+
+.gm-style > div:first-child > div:first-child > div:nth-child(4) > div{ overflow: visible !important; }
+.gm-style > div:first-child > div:first-child > div:nth-child(4) > div img{ top: 20px !important;margin-left: -20px !important; }
+
+@media(max-width:1000px){
+    .text-center ul{margin-left: 15px;}
+}
+
+
+
+
+
+
+/**===================================================================================================
+Info Page
+=====================================================================================================*/
+/*contact us form related*/
+.contact-us-form form{ margin-bottom:50px;margin-top:0 !important; }
+.contact-us-form .button-group button.addattach { margin-right: 60px;width:auto;padding:0 10px; }
+.contact-us-form div.wpcf7{margin-top:0 !important; }
+.contact-us-form .button-group { margin-top: 25px !important; }
+#contact-image{ z-index: -1; }
+.wpcf7-recaptcha iframe{opacity:1 !important;}
+@media (max-width: 1000px){
+    #contact-image img{display:block;margin:0 !important; }
+}
+
+/*others*/
+@media (max-width: 1000px){
+    .divider-wrap{display:none;}
+    .wpb_text_column .wpb_wrapper > p > img{ width:100%; }
+    .wpb_row{margin-bottom:0;}
+    .text-center .wpb_wrapper > h4{ margin-top:0 !important;}
+    .text-center .wpb_wrapper p:last-of-type{padding-bottom:0;}
+    .bg-white-mobile{background:#fff;}
+}
+#ID h4.nowrap{white-space: nowrap;}
+
+/*accessibility*/
+.accessibility1 .text-center{padding: 10px 15px;margin-bottom: 20px;}
+
+
+
+
+
+/**===================================================================================================
+Salient
+=====================================================================================================*/
+html body #header-outer[data-transparent-header="true"].transparent{ border-bottom: none!important; }
+@media (min-width: 768px){
+    .xui_header_section .row-bg-wrap > div.row-bg{background-size:100% 100%;}
+}
+
+/*post detail page iframe issue*/
+@media(max-width:1000px){
+    .single-post .post-content .issuuembed{width:auto !important;}
+}
+
+
+
+
+/**===================================================================================================
+news
+=====================================================================================================*/
+@media (min-width:767px) {
+    #post-area article .post-content{
+        min-height: 360px !important; 
+    }
+}
+
+#posts-row .post-content .article-content-wrap .title a { color: #000 !important; }
+#posts-row .post-content .article-content-wrap .title a:hover { color: #2a34f7 !important; }
+#posts-row .post-content .post-meta .date { color: #000; }
+/*#posts-row .post-content:hover { color: #000; }*/
+
+
+.blog-fullwidth-wrap #post-area.masonry { margin-bottom: 0 !important; }
+
+
+
+
+/**===================================================================================================
+Footer Widget
+=====================================================================================================*/
+@media (min-width: 1001px){
+    .single-sponsor .caroufredsel_wrapper .clients{ width:100%!important;text-align: center !important; }
+    .single-sponsor .caroufredsel_wrapper .clients > div{width:22% !important;display: inline-block;float: none;}
+}
+@media(max-width: 1000px){
+    .single-sponsor .brand-sponsor .carousel-wrap{padding:0;}
+}
+
+/*transparent logos*/
+.footer-content .brand-sponsor .carousel-wrap { padding: 35px 0; }
+.footer-content .brand-sponsor .clients > div { background: #189af5; }
+.carousel-outer { margin-bottom: 0 !important; }
+
+
+/*three sponsors*/
+#sponsors-row .sponsors-column .wpb_wrapper { padding: 35px 0; }
+#sponsors-row .sponsors-column .clients > div { margin-bottom: 0; }
+@media (max-width: 1000px){
+ #sponsors-row .sponsors-column .clients > div {
+     margin-bottom: 5%;
+     margin-top: 5%;
+ }
+ #ajax-content-wrap #sponsors-row .col.span_12 {
+    max-width: 100% !important;
+ }
+ #sponsors-row .sponsors-column .wpb_wrapper { padding: 0; }
+}
+
+@media (max-width: 1000px){
+  #ajax-content-wrap .footer-content .wpb_row.socail_channels>.col{max-width: 500px !important}
+  #sponsors-row .sponsors-column .clients > div{margin-left: 37%;}
+}
+@media (max-width: 690px){
+  #ajax-content-wrap .footer-content .wpb_row.socail_channels>.col {max-width: 300px !important}
+  #sponsors-row .sponsors-column .clients > div {margin-left: 25%;}
+}
+
+/*color code update*/
+#social_channel .pricing-table.channels .pricing-column-content>a i { color: #f81f71 !important; }
+#social_channel .pricing-table.channels .pricing-column-content>a i:hover{ color: #fff !important; }
+body #footer-outer a:hover { color: #f81f71 !important; }
+
+@media (min-width: 768px){
+	.vc_col-sm-10,.vc_col-sm-11,.vc_col-sm-12,.vc_col-sm-2,.vc_col-sm-3,.vc_col-sm-4,.vc_col-sm-5,.vc_col-sm-6,.vc_col-sm-7,.vc_col-sm-8,.vc_col-sm-9,body .vc_row-fluid .vc_col-sm-1{
+	    float:left;position:relative;min-height: 1px;margin-left: 2.1%;box-sizing: border-box;
+	}
+	body .vc_row-fluid .vc_col-sm-12{width:100%}
+	body .vc_row-fluid .vc_col-sm-8{width:65.95744680199999%}
+	body .vc_row-fluid .vc_col-sm-2{width: 14.89361702%}
+}
+
+
+
+
+
+
+
+
