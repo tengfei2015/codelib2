@@ -178,6 +178,10 @@ html body #header-outer[data-transparent-header="true"].transparent{ border-bott
     .xui_header_section .row-bg-wrap > div.row-bg{background-size:100% 100%;}
 }
 
+/*post detail page iframe issue*/
+@media(max-width:1000px){
+    .single-post .post-content .issuuembed{width:auto !important;}
+}
 
 
 
