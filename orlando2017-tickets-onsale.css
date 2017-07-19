@@ -1,0 +1,36 @@
+﻿/* pricing table */
+.pricing-table.tickets.hide-interval .interval{display:none;}
+.pricing-table.tickets{padding-bottom: 0;}
+@media(min-width:1001px){
+    .locker .pricing-column { width: 50%; }
+    .gavip .pricing-table.tickets .pricing-column-content{min-height: 165px;}
+	.pricing-table.tickets.layaway-tickets .pricing-column{width:50%!important;}
+	.pricing-table.tickets.layaway-tickets .pricing-column-content{min-height:0;}
+}
+@media(max-width: 1000px){
+	.pricing-table.tickets{margin-bottom:0!important;}
+    .pricing-table.tickets .pricing-column h3{padding:18px 0;}
+    .pricing-table.tickets .pricing-column-content h4{font-size: 50px !important;line-height: 1.5em !important;margin:0;padding: 0;}
+    .pricing-table.tickets .pricing-column-content h4 > .dollar-sign{font-size: 45px !important;line-height: 45px;font-weight:normal!important;}
+    .pricing-table.tickets .pricing-column-content .nectar-button{margin-bottom:0;}
+    
+    /*border on mobile*/
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{
+        border-left: 1px solid #e4e4e4!important; padding-top:10px !important;
+        padding-bottom:10px !important;
+    }
+}
+
+.gavip .pricing-table.tickets{margin: 0;padding-bottom:0px;}
+.gavip .pricing-table.tickets .pricing-column{width:100%;}
+
+/*others*/
+@media(max-width:1000px){
+    #lockers-content .img-locker { margin-bottom: -8px !important; }
+    .row .col .wpb_text_column img{width:100%;}
+    .hide-interval-mobile .divider-wrap { display: none; }
+    body[data-bg-header="true"] .container-wrap { padding-bottom: 0; }
+}
+#ajax-content-wrap .container-wrap{padding-bottom:0 !important;}

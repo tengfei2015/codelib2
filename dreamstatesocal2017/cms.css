@@ -31,6 +31,25 @@ body.home #header-outer.transparent header#top nav ul.sf-menu>li>a{text-shadow: 
 
 
 
+/*===========Tickets Page*/
+.pricing-table.tickets .pricing-column h4{ font-size:44px !important; }
+.pricing-table.tickets .pricing-column h4 .dollar-sign{font-size: 44px !important; top: 0px;}
+.gavip .pricing-table.tickets{margin: 0;padding-bottom: 25px;}
+.gavip .pricing-table.tickets .pricing-column{width:100%;}
+.gavip .pricing-table.tickets .pricing-column .interval{display:none;}
+@media (max-width: 1000px){
+    #ajax-content-wrap .container-wrap{ padding-bottom:0;}
+    .wpb_wrapper > .divider{display:none;}
+    .gavip .pricing-table.tickets{padding-bottom: 0;}
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{
+        border-left: 1px solid #e4e4e4!important; padding-top:10px !important;
+        padding-bottom:10px !important;
+    }
+}
+#ajax-content-wrap .container-wrap{ padding-bottom:0 !important; }
+
 
 
 
@@ -67,4 +86,10 @@ body #footer-outer a:hover {color:#B4B5DC !important;}
 /*fix lineup menu not highlight issue*/
 body #header-outer.transparent header#top nav .sf-menu > li:hover > a {color:#00b4ff !important;}
 
-
+@media only screen and (max-width: 1000px) and (min-width: 1px){
+    #header-outer header#top #logo{height: 29px;}
+    .xui_header_section2.brands.z_index{z-index: 11;}
+}
+#ajax-content-wrap .swiper-slide{
+    background-position: 80% top;
+}
