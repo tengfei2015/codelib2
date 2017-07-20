@@ -1,0 +1,70 @@
+﻿
+
+/*===========Home Page*/
+
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap > div:first-child .container{ max-width: none !important;padding: 0 !important; }
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+}
+
+#firstRow{z-index:20;}
+#firstRow .add-calendar-column{ z-index: 11; }
+body.home #header-outer.transparent header#top nav ul.sf-menu>li>a{text-shadow: 0px 0px 10px rgba(0,0,0, 0.2);}
+
+/*daniel: display arrows on slider blog*/
+.slider-post-container { overflow: initial; }
+.slider-post-container .post-content .article-content .title:hover {color:#004AA3 !important;}
+.slider-post-container .post-content .read-more{color:#004AA3 !important;}
+.slider-post-container .post-content:hover{color:#004AA3 !important;}
+@media(max-width:1000px){
+    .home_slider .content .content{ display:none;}
+	#firstRow-mobile a.btn-newsletter-signup{margin:0 0 0 8px!important;}
+}
+
+
+
+
+
+
+
+/*===========NEWS (get latest code news)*/
+
+/*===========VIP CABANAS INQUIRY FORM (get latest code escape2017)*/
+
+
+
+
+
+
+/*===========Footer Widget*/
+/*sponsors*/
+.footer-content .brand-sponsor .carousel-wrap { padding: 35px 0; }
+.footer-content .brand-sponsor .clients > div { background: #00b4ff; }
+.carousel-outer { margin-bottom: 0 !important; }
+@media (min-width: 1001px){
+    .single-sponsor .caroufredsel_wrapper .clients{ width:100%!important;text-align: center !important; }
+    .single-sponsor .caroufredsel_wrapper .clients > div{width:22% !important;display: inline-block;float: none;}
+}
+@media(max-width: 1000px){
+    .single-sponsor .brand-sponsor .carousel-wrap{ padding:0; }
+}
+
+#social_channel .channels a i{color: #b4b5dc !important;}
+#social_channel .channels a i:hover{ color: #fff !important;}
+.pricing-table.channels .pricing-column>h3, .pricing-table.channels .pricing-column>div{background: #00B4FF !important;}
+
+
+
+/*===========Salient*/
+body #footer-outer a:hover {color:#B4B5DC !important;}
+/*fix lineup menu not highlight issue*/
+body #header-outer.transparent header#top nav .sf-menu > li:hover > a {color:#00b4ff !important;}
+
+

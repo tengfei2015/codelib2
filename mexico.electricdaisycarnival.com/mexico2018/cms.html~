@@ -1,0 +1,63 @@
+
+<!--=============== Home Page ===============-->
+<a href="https://www.facebook.com/ElectricDaisyCarnivalMexico" target="_blank"><i class="icon-normal fa-facebook accent-color"></i></a>
+<a href="https://twitter.com/edc_mexico" target="_blank"><i class="icon-normal fa-twitter accent-color"></i></a>
+<a href="https://instagram.com/edc_mexico" target="_blank"><i class="icon-normal fa-instagram accent-color"></i></a>
+<a title="Add to Calendar" class="addeventatc"><i class="icon-normal fa-calendar accent-color"></i>
+    <span class="start">25/02/2017 01:00 PM</span>
+    <span class="end">26/02/2017 10:00 PM</span>
+    <span class="timezone">America/Mexico_City</span>
+    <span class="title">EDC MEXICO 2017</span>
+    <span class="description">¡Electric Daisy Carnival regresa a la Ciudad de México el 25 y 26 de febrero del 2017!</span>
+    <span class="location">Autodrómo Hermanos Rodríguez</span>
+    <span class="organizer">Insomniac</span>
+    <span class="organizer_email">Organizer e-mail</span>
+    <span class="all_day_event">false</span>
+    <span class="date_format">DD/MM/YYYY</span>
+</a>
+<a class="btn-newsletter-signup" href="#">REGISTRATE</a>
+
+
+<div id="youtube-video">
+<iframe id="watch-trailer-list" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLtZ1Nsu2D5r2L5Klnp8L7SVa1JrDKrnmn" frameborder="0"></iframe>
+</div>
+
+<script type="text/javascript">
+(function($){
+    $(function(){
+        $(".watch-trailer-button .nectar-button").click(function(){
+            setTimeout(function(){
+                window.dispatchEvent(new Event('resize'));
+            }, 1000);
+        });
+
+        $('.btn-newsletter-signup').click(function(){
+            $("#dummy-newsletter-btn").trigger("click");
+            return false;
+        });
+    });
+})(jQuery);
+</script>
+
+
+
+<!--=============== COMUNIDAD ===============-->
+<script type="text/javascript">
+(function($){
+	$(".gallery-track").find("a").click(function(){
+		if (typeof insomniac.analytics.gaSend  !== 'function') {
+			insomniac.analytics.gaSend('gallery', 'viewd', $(this).text());
+		}
+	});
+})(jQuery);
+</script>
+
+
+
+
+<!--=============== TRAVEL ===============-->
+<script type="text/javascript">
+jQuery(window).on("pronto.render", function(){
+  mapAPI_Loaded();
+});
+</script>
