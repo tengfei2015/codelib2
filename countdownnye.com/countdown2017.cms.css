@@ -1,0 +1,59 @@
+﻿/*===Home Page===================================================================================*/
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap > div:first-child .container{ max-width: none !important;padding: 0 !important; }
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+}
+
+#firstRow{z-index:20;}
+#firstRow .add-calendar-column{ z-index: 11; }
+#firstRow .col.span_12 > div{opacity: 1 !important;transform: translate(0px, 0px) !important;}
+#firstRow .watch-trailer-button .nectar-button{margin:0!important;}
+
+
+.slider-post-container .post-content .article-content .title{color:#000 !important;}
+.slider-post-container .post-content .article-content .title:hover{color:#004AA3 !important;}
+.wpb_raw_html.insomniac-socail-bar a i:hover{color:#f4b237 !important;}
+a.btn-newsletter-signup:hover{border-color: #5e4850;background-color: #5e4850;}
+
+@media(max-width:1000px){
+    .home_slider .content{ display:none;}
+    #firstRow-mobile a.btn-newsletter-signup{margin:0 0 0 8px!important;}
+    .video-embed.wpb_raw_html, .video-embed.wpb_raw_html .iframe-embed{margin-bottom:0 !important;}
+}
+
+
+
+/*===TICKETS===================================================================================*/
+#ajax-content-wrap .container-wrap{ padding-bottom:0 !important; }
+.pricing-table.tickets.hide-interval .pricing-column .interval{display:none;}
+@media (max-width: 1000px){
+    .wpb_wrapper > .divider{display:none;}
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{
+        border-left: 1px solid #e4e4e4!important; padding-top:10px !important;
+        padding-bottom:10px !important;
+    }
+}
+@media(min-width:1001px){
+    .vc_col-sm-6 .pricing-table.tickets .pricing-column{width:33% !important;}
+}
+
+
+
+
+/*===NEWS===================================================================================*/
+.blog-fullwidth-wrap #post-area.masonry { margin-bottom: 0 !important; }
+@media (min-width:767px) {
+    #post-area article .post-content{min-height: 360px !important; }
+}
+.news-blogs .posts-container article .post-content .title a{color:#000 !important;}
+.news-blogs .posts-container article .post-content .title a:hover{color:#004AA3 !important;}
+

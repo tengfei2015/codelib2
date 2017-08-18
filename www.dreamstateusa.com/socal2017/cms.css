@@ -30,13 +30,13 @@ body.home #header-outer.transparent header#top nav ul.sf-menu>li>a{text-shadow: 
 
 
 /*===TICKETS===================================================================================*/
+#ajax-content-wrap .container-wrap{ padding-bottom:0 !important; }
 .pricing-table.tickets .pricing-column h4{ font-size:44px !important; }
 .pricing-table.tickets .pricing-column h4 .dollar-sign{font-size: 44px !important; top: 0px;}
 .gavip .pricing-table.tickets{margin: 0;padding-bottom: 0;}
 .gavip .pricing-table.tickets .pricing-column{width:100%;}
 .pricing-table.tickets.hide-interval .pricing-column .interval{display:none;}
 @media (max-width: 1000px){
-    #ajax-content-wrap .container-wrap{ padding-bottom:0;}
     .wpb_wrapper > .divider{display:none;}
     .gavip .pricing-table.tickets{padding-bottom: 0;}
     .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
@@ -47,7 +47,6 @@ body.home #header-outer.transparent header#top nav ul.sf-menu>li>a{text-shadow: 
     }
 }
 
-#ajax-content-wrap .container-wrap{ padding-bottom:0 !important; }
 
 
 /*===VIP CABANAS INQUIRY FORM===================================================================================*/

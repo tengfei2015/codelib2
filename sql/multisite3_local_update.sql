@@ -19,6 +19,10 @@ update wp_46_options set option_value = 'http://dreamstatesocal2017.local.multis
 update wp_46_options set option_value = 'http://dreamstatesocal2017.local.multisite3.com/' where option_id=2;
 update wp_47_options set option_value = 'http://japan2018.local.multisite3.com/' where option_id=1;
 update wp_47_options set option_value = 'http://japan2018.local.multisite3.com/' where option_id=2;
+update wp_48_options set option_value = 'http://countdown2017.local.multisite3.com/' where option_id=1;
+update wp_48_options set option_value = 'http://countdown2017.local.multisite3.com/' where option_id=2;
+update wp_49_options set option_value = 'http://vegas2018.local.multisite3.com/' where option_id=1;
+update wp_49_options set option_value = 'http://vegas2018.local.multisite3.com/' where option_id=2;
 
 #wp_blogs
 update wp_blogs set domain='local.multisite3.com' where blog_id=1;
@@ -30,3 +34,5 @@ update wp_blogs set domain='audiotistic.local.multisite3.com' where blog_id=44;
 update wp_blogs set domain='escape2017.local.multisite3.com' where blog_id=45;
 update wp_blogs set domain='dreamstatesocal2017.local.multisite3.com' where blog_id=46;
 update wp_blogs set domain='japan2018.local.multisite3.com' where blog_id=47;
+update wp_blogs set domain='countdown2017.local.multisite3.com' where blog_id=48;
+update wp_blogs set domain='vegas2018.local.multisite3.com' where blog_id=49;
