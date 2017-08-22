@@ -1,6 +1,20 @@
 Please Keep Same Codes In Two Languages
 
 /*====================== Home Page =========================*/
+/** Home slider show black screen before video start to play --tengfei*/
+@media (min-width: 1000px){
+    #ajax-content-wrap .nectar-slider-loading{display:none !important;}
+    #ajax-content-wrap .swiper-slide{background-color: #000 !important;}
+    #ajax-content-wrap  .container-wrap{background: #000 !important;}
+    #ajax-content-wrap > div:first-child .container{ max-width: none !important;padding: 0 !important; }
+    #ajax-content-wrap #nectar-slider + .container-wrap{background: #f6f6f6 !important;}
+    .home_slider .container .content > * { opacity:1 !important;padding-top: 0 !important; }
+    .nectar-slider-wrap{display:block;}
+    .main-content .row #nectar-slider{ visibility: visible; }
+}
+@media (max-width:1000px){
+    body.ascend{background-color:#f6f6f6;}
+}
 @media(max-width:1000px){
     .home_slider .content{display:none !important;}
     #firstRow .add-calendar-column{padding:0!important;}
@@ -8,12 +22,31 @@ Please Keep Same Codes In Two Languages
     .wpb_raw_html.mobile-video .iframe-embed{margin-bottom:0!important;}
 }
 
+
 #firstRow{z-index:12;}
 #firstRow .add-calendar-column{z-index:20;}
 .slider-post-container{overflow: visible !important;}
 .xui_header_section h2 a{color:#fff !important;}
 
 .watch-trailer-btn .nectar-button{margin:0 !important;top:0 !important;}
+
+
+/*color updates*/
+.wpb_raw_html.insomniac-socail-bar a i:hover { color: #810e78 !important; }
+.wpb_text_column.view-more a:hover { color: #1bb3cd !important; }
+.slider-post-container .post-content
+.article-content .title:hover { color: #f00469 !important; }
+.slider-post-container .post-content:hover { color: #1bb3cd !important; }
+.slider-post-container .post-content:hover .read-more { color: #1bb3cd !important; }
+
+@media(max-width:1000px){
+  #news-title strong { display: block; }
+  #news-title {
+    padding-top: 2.6% !important;
+    padding-bottom: 2.6% !important;
+  }
+  #news-title .column_container { padding: 0 !important; }
+}
 
 
 /*====================== TICKETS =========================*/
@@ -127,11 +160,7 @@ input[type=checkbox]#signup:checked + label:before { letter-spacing: 7px; } /* a
 
 
 /*====================== Salient =========================*/
-#lang_sel_footer a{background: #39005d !important;}
-#lang_sel_footer a.lang_sel_sel, 
-#lang_sel_footer a:hover{background-color: #a100f4 !important;}
-.small-nav ~ #ajax-content-wrap #lang_sel_footer{top: 10px;right: 10px;}
-
+#header-outer.small-nav .sf-menu .sub-menu{top: 36px !important;}
 /*section header font color*/
 .xui_header_section .wpb_wrapper strong, 
 .xui_header_section2 .wpb_text_column strong{color: #fff;}
@@ -148,11 +177,10 @@ input[type=checkbox]#signup:checked + label:before { letter-spacing: 7px; } /* a
     .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
 }
 
+.mobile-insomniac-logo{z-index:2;}
 @media screen and (max-width: 1000px){
     .mobile-insomniac-logo{ padding-right: 28px; }
 }
-#ajax-content-wrap .slide-nav li a.checked{background: #6d00b2 !important;}
-
 
 
 

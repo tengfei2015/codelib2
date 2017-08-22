@@ -1,0 +1,82 @@
+<script type="text/javascript">
+window.inquiryFormSendToSevenroom = function(siteName){
+    var data = {};
+    data['secret_key'] = "76d921ea0aed19904bd9ac5d4085d052684054d55c0c614228ac13d83dcc6bce";
+    data['request_class'] = "table";
+
+    var favorites = [];
+    var date_val;
+    $.each($("input[name='date[]']:checked"), function(){
+      switch ($(this).val()) {
+        case 'FRIDAY, June 16': date_val = '2017-06-16'; break;
+        case 'SATURDAY, June 17': date_val = '2017-06-17'; break;
+        case 'SUNDAY, June 18': date_val = '2017-06-18';
+      }       
+      favorites.push(date_val);
+    });
+    $.each( favorites, function(i, val){
+      if (i==0)
+        data['date'] = val;
+      else{
+        data['custom_'+(i+1)+'_label'] = 'Another date';
+        data['custom_'+(i+1)] = val;
+      }
+    });
+    console.log(data);
+
+    var email = $('#inquiry-form-area input[name=email]').val();
+    if (email){
+        data['email'] = email;
+    }
+    var first_name = $('#inquiry-form-area input[name=first_name]').val();
+    if (first_name){
+        data['first_name'] = first_name;
+    }
+    var last_name = $('#inquiry-form-area input[name=last_name]').val();
+    if (last_name){
+        data['last_name'] = last_name;
+    }
+    var phone = $('#inquiry-form-area input[name=phone]').val();
+    if (phone){
+        data['phone_number'] = phone;
+    }
+
+    data['custom_1_label'] = 'Event Name';
+    data['custom_1'] = siteName;
+
+    var guest_number = $('#inquiry-form-area select[name=guest_number]').val();
+    if (guest_number) {
+        data['party_size'] = guest_number;
+    }
+
+    var questions = $('#inquiry-form-area textarea[name=questions]').val();
+    data['client_request'] = questions;
+ 
+    $.ajax({
+        type: "POST",
+        url: "http://www.sevenrooms.com/api/1_0/venue/edcvegas/custom-request/create",
+        data: data,
+        crossDomain: true,
+        success: function (data, status, jqXHR) {
+        },
+        error: function (jqXHR, status) {
+         // error handler
+         console.log(status);
+        }
+    });
+}
+</script>
+
+
+<script type="text/javascript">
+//mail sent ok hook
+function mail_sent_success(){
+    inquiryFormSendToSevenroom('Electric Daisy Carnival Las Vegas 2018');
+    inquiryForm.sendToET('VEGAS_2018_INQUIRYFORM');
+    
+    jQuery('#inquiry-form-area').fadeOut();
+    jQuery('#form_sent_ok').fadeIn();
+    jQuery(window).scrollTop(0);
+    setTimeout(" window.location.href='/tickets/#skydeck' ",5000);
+}
+</script>
