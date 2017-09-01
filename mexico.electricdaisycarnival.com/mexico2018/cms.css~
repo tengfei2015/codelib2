@@ -208,6 +208,15 @@ body.tag #post-area .post-content:hover .continue-reading { color: #1bb3cd !impo
 
 
 
+
+
+
+
+
+
+
+
+
 /*====================== Footer Widget =========================*/
 /*sponsors*/
 .footer-content .brand-sponsor .carousel-wrap { padding: 35px 0; }

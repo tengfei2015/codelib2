@@ -1,0 +1,38 @@
+
+<!-- Nectar Slider -->
+Text:
+Watch Trailer/Mira El Trailer
+Link:
+javascript:void(0)
+Class:
+watch-trailer
+
+<!-- button -->
+<a class="nectar-button large see-through-2" rel="prettyPhoto" href="#youtube-video" data-color-override="false"  data-hover-color-override="#810e78" data-hover-text-color-override="#fff"><span>MIRA EL TRAILER</span> </a>
+
+
+<!-- video html -->
+<div id="youtube-video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hQXZcgDFnFE" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- scripts -->
+<script type="text/javascript">
+window.resizePage = function(){
+    console.log('watch trailer is open now!');
+    setTimeout(function(){window.dispatchEvent(new Event('resize'));}, 1000);
+}
+window.openWatchTrailer = function(){
+    jQuery(".watch-trailer-btn .nectar-button").trigger('click');
+}
+window.openNewsletter = function(){
+    jQuery("#dummy-newsletter-btn").trigger("click");
+}
+
+jQuery(".watch-trailer-btn .nectar-button").attr('onclick', 'resizePage();');
+jQuery(".home_slider a.watch-trailer").attr('onclick', 'openWatchTrailer();');
+
+jQuery('.btn-newsletter-signup').click(function(){
+     return false;
+});
+</script>

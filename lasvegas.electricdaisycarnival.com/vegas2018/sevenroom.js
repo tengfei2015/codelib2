@@ -51,17 +51,3 @@ window.inquiryFormSendToSevenroom = function(siteName){
     });
 }
 </script>
-
-
-<script type="text/javascript">
-//mail sent ok hook
-function mail_sent_success(){
-    inquiryFormSendToSevenroom('Electric Daisy Carnival Las Vegas 2018');
-    inquiryForm.sendToET('VEGAS_2018_INQUIRYFORM');
-    
-    jQuery('#inquiry-form-area').fadeOut();
-    jQuery('#form_sent_ok').fadeIn();
-    jQuery(window).scrollTop(0);
-    setTimeout(" window.location.href='/tickets/#skydeck' ",5000);
-}
-</script>
