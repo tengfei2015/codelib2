@@ -42,10 +42,50 @@
     .pricing-table.tickets .interval{min-height:28px;line-height:28px !important;}
 }
 @media(min-width:1001px){
-    .pricing-table.tickets.ga .pricing-column-content{min-height:125px;}
+    .pricing-table.tickets .pricing-column-content h4{margin:0;padding:15px 0 8px!important;}
+    .pricing-table.tickets .pricing-column-content .interval{padding:5px 0;}
+    
+    .pricing-table.tickets.ga .pricing-column-content{min-height:150px;}
     .pricing-table.tickets.vip .pricing-column-content{min-height:135px;}
+    .pricing-table.laybx .pricing-column{width:16.66%;}
     .pricing-table.tickets.laybx .pricing-column h4{padding-top:26px;}
 }
+
+
+
+
+
+
+
+/*====================== CAMPING PAGE =========================*/
+
+#prem-camp table, #prem-camp td{border: none !important; background-color: #fff;}
+@media (max-width: 1000px){
+    .wpb_row.parallax_section{display: block;}
+    #ajax-content-wrap .main-content > .row > .vc_row.header-section-gray{padding: 10px 0 !important;}
+    .second-list { margin-top: -25px; }
+    .mg-btm { padding-bottom: 5%; }
+}
+
+/*pricing-table*/
+.pricing-table.tickets{margin-top:0;}
+.pricing-table.laybx .pricing-column{width:100%;}
+.pricing-table.laybx .pricing-column h3 > span{text-transform: uppercase;font-size: 13px;display: block;}
+.pricing-table.tickets .pricing-column-content .nectar-button{top:0 !important;}
+@media(max-width: 1000px){
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column-content .nectar-button{margin-bottom:0;}
+    .pricing-table.tickets .pricing-column-content h4{padding-top:10px;}
+}
+@media(min-width:1001px){
+    .pricing-table.laybx .pricing-column h3{ padding: 12px 0 8px; }
+    .pricing-table.tickets .pricing-column-content h4{margin:0;padding:15px 0 8px!important;}
+    .pricing-table.tickets .pricing-column-content .interval{padding:5px 0;}
+}
+
+
+
+
 
 
 
@@ -95,7 +135,7 @@
     #contact-image img{display:block;margin:0 !important; }
 }
 
-.accent-bg a{color:#fff;}
+.accent-bg a{color:#5742bd;}
 
 @media (max-width: 1000px){
     #info-content .wpb_text_column h4:first-child{margin-bottom:0 !important;}
@@ -110,12 +150,11 @@
 
 
 
+
 /*====================== Footer Widget =========================*/
 /*social channels*/
 .pricing-table.channels .pricing-column>h3, 
-.pricing-table.channels .pricing-column>div{
-    background: #252525 !important;
-}
+.pricing-table.channels .pricing-column>div{background: #252525 !important;}
 .channels a i{color: #fff !important;}
 .channels a i:hover{color: #5742bd !important;}
 
@@ -128,7 +167,7 @@
 }
 
 @media (max-width: 767px){
-    /*.xui_header_section2 .row-bg-wrap > div.row-bg{background-image: none !important;}*/
+    .xui_header_section2 .row-bg-wrap > div.row-bg{background-image: none !important;}
 }
 
 /* footer sticky buttons */
@@ -138,11 +177,13 @@
 }
 body.single #home-sticky-footer{display:none!important;}
 #home-sticky-footer{position:fixed;top:auto;bottom:0;z-index:99999;padding:0 10px;width:100%;height:50px;background:#3e79ef;font-size:0;line-height:50px;}
-#home-sticky-footer a{position:relative;display:inline-block;box-sizing:border-box;width:33.33%;color:#fff;text-align:center;font-size:16px;}
-#home-sticky-footer a:after{position:absolute;top:50%;right:0;display:block;margin-top:-8px;width:1px;height:16px;background:#fff;content:'';}
+#home-sticky-footer a{position:relative;display:inline-block;box-sizing:border-box;width:50%;color:#fff;text-align:center;font-size:16px;text-transform: uppercase;font-weight: bold;font-family: sans-serif;}
+#home-sticky-footer a:after{position:absolute;top:50%;right:0;display:block;margin-top:-11px;width:2px;height:22px;background:#fff;content:'';}
 #home-sticky-footer a:last-child:after{display:none;}
 
-
+@media (min-width: 1000px) {
+    #footer-outer .widget_nav_menu {min-height: 340px !important;}
+}
 
 
 
@@ -151,6 +192,9 @@ body.single #home-sticky-footer{display:none!important;}
 
 
 /*====================== SALIENT =========================*/
+@media only screen and (min-width: 1001px){
+    html body #header-outer[data-transparent-header="true"].transparent{border:none!important;}
+}
 
 /*section header font color*/
 .xui_header_section .wpb_wrapper strong,
@@ -159,9 +203,6 @@ body.single #home-sticky-footer{display:none!important;}
 
 .single-post .col h2{font-size: 18px;line-height: 20px;}
 #ajax-content-wrap .accent-color-bg a{color:#fff;}
-
-/*footer*/
-/*body #footer-outer a:hover{color: #66ede0 !important;}*/
 
 /*mobile ui adjust*/
 @media(max-width:1000px){
@@ -175,3 +216,28 @@ body.single #home-sticky-footer{display:none!important;}
 /*fix gap below image*/
 .wpb_row.fix-bottom-white-line .vc_col-sm-6{height:auto !important;}
 .wpb_row.fix-bottom-white-line .vc_col-sm-6 img{display:block;}
+
+
+/*tag page*/
+body.tag .container-wrap{margin: 0 !important;padding: 0 !important;}
+body.tag #post-area{padding-bottom: 25px !important;margin-bottom: 0 !important;}
+body.tag #post-area .post-featured-img img{display:block;}
+body.tag #post-area .post-header > span{display:none;}
+body.tag #post-area .nectar-love-wrap{display:none;}
+body.tag #post-area .post-meta{padding-bottom: 5px !important;}
+body.tag #post-area .more-link{display: block;position: absolute;right: 10px;bottom: -23px;}
+body.tag #post-area .continue-reading{background: transparent;color:#33a0ff;}
+body.tag #post-area .post-content .post-meta .date{color: #66EDE0 !important;}
+
+@media(min-width:1001px){
+  body.tag #post-area .article-content-wrap{min-height:125px;}
+}
+
+body.tag #post-area .post-content:hover .title a { color: #3e79ef !important; }
+body.tag #post-area .post-content .title a:hover{ color: #5742bd !important; }
+body.tag #post-area .post-content:hover .post-meta .date { color: #5742bd !important; }
+body.tag #post-area .post-content:hover .continue-reading { color: #5742bd !important; }
+@media(max-width:1000px){
+    .single-post .post-content .post-tags{margin-bottom:20px;}
+}
+
