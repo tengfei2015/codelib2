@@ -1,0 +1,26 @@
+/*@media (min-width: 1001px){
+    #header-outer.transparent nav>ul>li:nth-child(4) {
+        background-image: url(https://dm3381rcqf07k.cloudfront.net/multisite.insomniac.com/wp-content/uploads/sites/48/2017/09/13202524/insomniac_countdown_2017_logo_white1.png);
+        background-position: center top;
+        width: 16% !important;
+    }
+    #header-outer.transparent nav>ul>li{width: 10% !important;}
+    #header-outer.transparent nav>ul>li:nth-child(4){margin-right: 1% !important;}
+    #header-outer.transparent nav>ul>li:nth-child(7){width: 7% !important;min-width: 60px !important;}
+}*/
+
+
+/*#ajax-content-wrap .container-wrap{ padding-bottom:0 !important; }
+.pricing-table.tickets.hide-interval .pricing-column .interval{display:none;}
+@media (max-width: 1000px){
+    .wpb_wrapper > .divider{display:none;}
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{
+        border-left: 1px solid #e4e4e4!important; padding-top:10px !important;
+        padding-bottom:10px !important;
+    }
+}
+@media(min-width:1001px){
+    .vc_col-sm-6 .pricing-table.tickets .pricing-column{width:33% !important;}
+}*/

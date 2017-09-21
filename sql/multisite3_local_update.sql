@@ -23,6 +23,10 @@ update wp_48_options set option_value = 'http://countdown2017.local.multisite3.c
 update wp_48_options set option_value = 'http://countdown2017.local.multisite3.com/' where option_id=2;
 update wp_49_options set option_value = 'http://vegas2018.local.multisite3.com/' where option_id=1;
 update wp_49_options set option_value = 'http://vegas2018.local.multisite3.com/' where option_id=2;
+update wp_50_options set option_value = 'http://beyondwonderland-mexico2018.local.multisite3.com/' where option_id=1;
+update wp_50_options set option_value = 'http://beyondwonderland-mexico2018.local.multisite3.com/' where option_id=2;
+update wp_51_options set option_value = 'http://skydeck-experiences.local.multisite3.com/' where option_id=1;
+update wp_51_options set option_value = 'http://skydeck-experiences.local.multisite3.com/' where option_id=2;
 
 #wp_blogs
 update wp_blogs set domain='local.multisite3.com' where blog_id=1;
@@ -36,3 +40,6 @@ update wp_blogs set domain='dreamstatesocal2017.local.multisite3.com' where blog
 update wp_blogs set domain='japan2018.local.multisite3.com' where blog_id=47;
 update wp_blogs set domain='countdown2017.local.multisite3.com' where blog_id=48;
 update wp_blogs set domain='vegas2018.local.multisite3.com' where blog_id=49;
+update wp_blogs set domain='beyondwonderland-mexico2018.local.multisite3.com' where blog_id=50;
+update wp_blogs set domain='skydeck-experiences.local.multisite3.com' where blog_id=51;
+

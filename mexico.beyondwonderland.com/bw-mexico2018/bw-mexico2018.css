@@ -1,0 +1,15 @@
+
+
+/*====================== NEWS =========================*/
+
+/*color codes*/
+.news-blogs .posts-container article .post-content .title a{color: #810e78 !important;}
+.news-blogs .posts-container article .post-content .title a:hover{color: #f00469 !important;}
+.news-blogs article.masonry-blog-item .post-content:hover .title a{color: #f00469 !important;}
+.news-blogs article.masonry-blog-item .post-content:hover .post-meta .date{color: #1bb3cd !important;}
+.news-blogs article.masonry-blog-item .post-content:hover .continue-reading{color: #1bb3cd !important;}
+
+.blog-fullwidth-wrap #post-area.masonry { margin-bottom: 0 !important; }
+@media (min-width:767px) {
+    #post-area article .post-content{min-height: 360px !important; }
+}
