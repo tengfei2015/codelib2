@@ -1,3 +1,72 @@
+/*====================== HOME PAGE =========================*/
+html[lang^="en"] .mobile-insomniac-logo a:last-child{display:none!important;}
+@media screen and (min-width: 1001px){html[lang^="en"] .mobile-insomniac-logo{right:120px}}
+#ajax-content-wrap .nectar-slider-loading{display:none !important;}
+#firstRow{z-index:20;}
+#firstRow .addthisevent-column{ z-index: 11; }
+#firstRow #trailer{margin-bottom:0 !important;top:0 !important;}
+.wpb_raw_html.mobile-video,#youtube-video{margin-bottom:0;}
+#youtube-video .iframe-embed{margin-bottom: 0;}
+.wpb_text_column.view-more{z-index: 99;position: relative;}
+
+@media(max-width:1000px){
+    .home_slider .content{ display:none;}
+}
+
+
+
+
+/*====================== TICKETS PAGE =========================*/
+/*start of tickets common style*/
+.pricing-table.tickets{margin:0 !important;}
+.pricing-table.no-interval .interval{display:none;}
+.pricing-table.tickets.vip .pricing-column{width:100%;}
+@media(max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper img{display: block;margin: 0;}
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{border-left: 1px solid #e4e4e4!important;}
+    .pricing-table.tickets .pricing-column h3{padding:8px 0;}
+    .pricing-table.tickets .pricing-column h4{padding-top:10px !important;}
+    .pricing-table.tickets .interval{min-height:28px;line-height:28px !important;}
+}
+@media(min-width:1001px){
+    .pricing-table.tickets .pricing-column-content h4{margin:0;padding:15px 0 8px!important;}
+    .pricing-table.tickets .pricing-column-content .interval{padding:5px 0;}
+    
+    .pricing-table.tickets.ga .pricing-column-content{min-height:150px;}
+    .pricing-table.tickets.vip .pricing-column-content{min-height:135px;}
+    .pricing-table.tickets.laybx .pricing-column{width:16.66%;}
+    .pricing-table.tickets.laybx .pricing-column h4{padding-top:26px;}
+}
+/*end of tickets common style*/
+
+/****side nav color****/
+.slide-nav li a.checked{ background: #4f7015 !important }
+.slide-nav li a:hover{ background-color: #87ba2f !important }
+
+
+
+
+
+
+
+
+/*====================== LineUp =========================*/
+#ajax-content-wrap .main-content{padding-bottom:1px;}
+#all-section .aloompa-lineup{margin-bottom:30px;}
+.lineup-image{text-align:center;}
+@media(min-width:1001px){
+    .container-wrap{background-position:0 25px !important;}
+    .page-template-lineup-2016 .lineup-row{padding-bottom: 1px !important;}
+    .lineup-image img{width:100%;}
+}
+@media screen and (max-width: 1000px){
+    .lineup-row .aloompa-lineup{margin-bottom:0;}
+    #coming-soon img{margin-bottom:0;}
+}
+
+
 
 
 /*====================== NEWS =========================*/
