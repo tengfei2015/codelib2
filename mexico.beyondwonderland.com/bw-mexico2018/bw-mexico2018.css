@@ -41,10 +41,10 @@ html[lang^="en"] .mobile-insomniac-logo a:last-child{display:none!important;}
 }
 /*end of tickets common style*/
 
-/****side nav color****/
+/****side nav****/
 .slide-nav li a.checked{ background: #4f7015 !important }
 .slide-nav li a:hover{ background-color: #87ba2f !important }
-
+#side-nav-tix nectar-fancy-ul{margin-bottom:0!important;}
 
 
 
@@ -82,3 +82,38 @@ html[lang^="en"] .mobile-insomniac-logo a:last-child{display:none!important;}
 @media (min-width:767px) {
     #post-area article .post-content{min-height: 360px !important; }
 }
+
+
+
+/*====================== SALIENT =========================*/
+@media only screen and (min-width: 1001px){
+    html body #header-outer[data-transparent-header="true"].transparent{border:none!important;}
+}
+
+.mobile-insomniac-logo{z-index:2;}
+@media screen and (max-width: 1000px){
+    .mobile-insomniac-logo{ padding-right: 28px; }
+}
+
+/*mobile ui adjust*/
+@media(max-width:1000px){
+    .wpb_row.parallax_section{display:block;}
+    .wpb_row:not(.parallax_section) .divider-wrap{display:none!important;}
+    .wpb_text_column > .wpb_wrapper img{ width:100%;margin: 0;}
+    .wpb_row.vc_row-fluid .span_12 > .wpb_column.text-center{padding-bottom:0!important;}
+    .text-center ul{margin-left: 15px;margin-bottom:0;}
+    .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
+}
+
+/*section header font color*/
+.xui_header_section .wpb_wrapper strong,
+.xui_header_section .wpb_wrapper strong a,
+.xui_header_section2 .wpb_text_column strong{color: #fff;}
+
+/**lang switch**/
+#lang_sel_footer a{background: #4e0048 !important;}
+#lang_sel_footer a.lang_sel_sel, 
+#lang_sel_footer a:hover{background-color: #f00469 !important;}
+.small-nav ~ #ajax-content-wrap #lang_sel_footer{top: 10px;right: 10px;}
+
+
