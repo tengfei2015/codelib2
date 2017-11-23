@@ -11,10 +11,11 @@ HomePage
 @media(max-width:1000px){
     .home_slider .content{ display:none;}
 }
-.wpb_raw_html.insomniac-socail-bar a.btn-newsletter-signup:hover{background-color: transparent;border-color: #fff;}
-.wpb_raw_html.insomniac-socail-bar a i:hover{color: #fff;}
+.wpb_raw_html.insomniac-socail-bar a.btn-newsletter-signup{transition: none;}/*remove  transition*/
+.wpb_raw_html.insomniac-socail-bar a.btn-newsletter-signup:hover{background-color: #a449a9;border-color: #a449a9;}
+.wpb_raw_html.insomniac-socail-bar a i:hover{color: #a449a9;}
 body #ajax-content-wrap #firstRow .watch-trailer a.nectar-button:hover{
-    color:#fff!important;border-color: #fff !important;background-color: transparent !important;
+    color:#fff!important;border-color: #6c0160 !important;background-color: #6c0160 !important;
 }
 
 
@@ -28,6 +29,7 @@ body #ajax-content-wrap #firstRow .watch-trailer a.nectar-button:hover{
 .slider-post-container .post-content .post-header .title:hover{color: #6c0160 !important;}
 .slider-post-container .post-content:hover, 
 .slider-post-container .post-content:hover .read-more { color: #32217b !important; }
+
 
 
 

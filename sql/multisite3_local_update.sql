@@ -29,6 +29,8 @@ update wp_51_options set option_value = 'http://skydeck-experiences.local.multis
 update wp_51_options set option_value = 'http://skydeck-experiences.local.multisite3.com/' where option_id=2;
 update wp_52_options set option_value = 'http://beyondwonderland-socal2018.local.multisite3.com/' where option_id=1;
 update wp_52_options set option_value = 'http://beyondwonderland-socal2018.local.multisite3.com/' where option_id=2;
+update wp_53_options set option_value = 'http://edcweek2018.local.multisite3.com/' where option_id=1;
+update wp_53_options set option_value = 'http://edcweek2018.local.multisite3.com/' where option_id=2;
 
 #wp_blogs
 update wp_blogs set domain='local.multisite3.com' where blog_id=1;
@@ -53,3 +55,16 @@ update wp_blogs set domain='skydeck-experiences.local.multisite3.com' where blog
 ##add 52
 INSERT INTO `wp_blogs` (`blog_id`, `site_id`, `domain`, `path`, `registered`, `last_updated`, `public`, `archived`, `mature`, `spam`, `deleted`, `lang_id`) 
 VALUES ('52', '1', 'beyondwonderland-socal2018.local.multisite3.com', '/', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', '1', '0', '0', '0', '0', '0');
+
+##add 52
+INSERT INTO `wp_blogs` (`blog_id`, `site_id`, `domain`, `path`, `registered`, `last_updated`, `public`, `archived`, `mature`, `spam`, `deleted`, `lang_id`) 
+VALUES ('53', '1', 'edcweek2018.local.multisite3.com', '/', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', '1', '0', '0', '0', '0', '0');
+
+
+
+
+
+
+
+
+

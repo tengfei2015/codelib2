@@ -1,0 +1,40 @@
+.wr-img img{width: 100% !important;}
+.pricing-table.tickets{margin:0 !important;}
+.pricing-table.no-interval .interval{display:none;}
+.pricing-table.tickets.vip .pricing-column{width:100%;}
+@media(max-width: 1000px){
+    .wpb_text_column > .wpb_wrapper img{display: block;margin: 0;}
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{border-left: 1px solid #e4e4e4!important;}
+    .pricing-table.tickets .pricing-column h3{padding:8px 0;}
+    .pricing-table.tickets .pricing-column h4{padding-top:10px !important;}
+    .pricing-table.tickets .interval{min-height:28px;line-height:28px !important;}
+}
+@media(min-width:1001px){
+    .pricing-table.tickets .pricing-column-content h4{margin:0;padding:15px 0 8px!important;}
+    .pricing-table.tickets .pricing-column-content .interval{padding:5px 0;}
+    
+    .pricing-table.tickets.ga .pricing-column-content{min-height: 172px;padding-bottom: 15px;}
+    .pricing-table.tickets.vip .pricing-column-content{min-height:135px;}
+    .pricing-table.laybx .pricing-column{width:20%;}
+    .pricing-table.tickets.laybx .pricing-column h4{padding-top:26px;}
+}
+
+.slide-nav li a.checked {
+    background: #5742bd !important;
+}
+
+/*.wpb_gallery{margin-bottom:0 !important;}*/
+.wpb_gallery .portfolio-items .col{margin-bottom:0 !important;}
+.wpb_gallery .col .work-info-bg{display:none;}
+.wpb_gallery .work-item img{transform: none !important;}/*IN-3903 remove hover effect*/
+@media(max-width: 1000px){
+    .wpb_row .mobile-gallery-carousel{margin-bottom:-1px !important;}
+}
+
+/*hide mobile sticky button on this page*/
+#home-sticky-footer{display:none;}
+
+
+
