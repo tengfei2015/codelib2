@@ -28,7 +28,8 @@
     .wpb_row.parallax_section{display:block;}
     .wpb_row:not(.parallax_section) .divider-wrap{display:none!important;}
     .wpb_text_column > .wpb_wrapper img{ width:100%; }
-    .text-center ul{margin-left: 15px;margin-bottom:0;}
+    .text-center ul{margin-left: 15px;}
+    .text-center ul:last-child{margin-bottom:0;}
     .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
     #ajax-content-wrap .wpb_column.text-center{padding-bottom: 0 !important;}
     #ajax-content-wrap .owl-carousel.mobile-gallery-carousel{margin-bottom:-1px !important;}
