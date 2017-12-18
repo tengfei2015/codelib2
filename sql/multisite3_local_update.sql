@@ -46,7 +46,8 @@ update wp_blogs set domain='countdown2017.local.multisite3.com' where blog_id=48
 update wp_blogs set domain='vegas2018.local.multisite3.com' where blog_id=49;
 update wp_blogs set domain='beyondwonderland-mexico2018.local.multisite3.com' where blog_id=50;
 update wp_blogs set domain='skydeck-experiences.local.multisite3.com' where blog_id=51;
-update wp_blogs set domain='skydeck-experiences.local.multisite3.com' where blog_id=52;
+update wp_blogs set domain='beyondwonderland-socal2018.local.multisite3.com' where blog_id=52;
+update wp_blogs set domain='edcweek2018.local.multisite3.com' where blog_id=53;
 
 
 
@@ -56,7 +57,7 @@ update wp_blogs set domain='skydeck-experiences.local.multisite3.com' where blog
 INSERT INTO `wp_blogs` (`blog_id`, `site_id`, `domain`, `path`, `registered`, `last_updated`, `public`, `archived`, `mature`, `spam`, `deleted`, `lang_id`) 
 VALUES ('52', '1', 'beyondwonderland-socal2018.local.multisite3.com', '/', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', '1', '0', '0', '0', '0', '0');
 
-##add 52
+##add 53
 INSERT INTO `wp_blogs` (`blog_id`, `site_id`, `domain`, `path`, `registered`, `last_updated`, `public`, `archived`, `mature`, `spam`, `deleted`, `lang_id`) 
 VALUES ('53', '1', 'edcweek2018.local.multisite3.com', '/', '0000-00-00 00:00:00.000000', '0000-00-00 00:00:00.000000', '1', '0', '0', '0', '0', '0');
 
