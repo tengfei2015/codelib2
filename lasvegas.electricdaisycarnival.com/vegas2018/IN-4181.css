@@ -1,0 +1,63 @@
+.wpb_gallery{margin-bottom:0 !important;}
+.wpb_gallery .portfolio-items .col{margin-bottom:0 !important;}
+.wpb_gallery .col .work-info-bg{display:none;}
+.wpb_gallery .work-item img{transform: none !important;}/*IN-3903 remove hover effect*/
+@media(max-width: 1000px){
+    .wpb_row .mobile-gallery-carousel{margin-bottom:-1px !important;}
+}
+#prem-camp table, #prem-camp td{border: none !important; background-color: #fff;}
+@media (max-width: 1000px){
+    .wpb_row.parallax_section{display: block;}
+    #ajax-content-wrap .main-content > .row > .vc_row.header-section-gray{padding: 10px 0 !important;}
+    .header-section-gray h2 strong{padding: 0 15px;}
+}
+@media (min-width: 768px){
+    .xui_header_section .row-bg-wrap > div.row-bg{background-size:100% 100% !important;}
+}
+
+/*pricing-table*/
+.pricing-table.tickets{margin-top:0;margin-bottom:0!important;}
+.pricing-table.laybx .pricing-column{width:100%;}
+.pricing-table.laybx .pricing-column h3 > span{text-transform: uppercase;font-size: 13px;display: block;}
+.pricing-table.tickets .pricing-column-content .nectar-button{top:0 !important;}
+.pricing-table.tickets .pricing-column .text_below_price{margin-top: 0px;padding: 0 18px 5px;}
+@media(max-width: 1000px){
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{border-left: 1px solid #e4e4e4!important;}
+    .pricing-table.tickets .pricing-column h3{padding:8px 0;}
+    .pricing-table.tickets .pricing-column h4{padding-top:10px !important;}
+    .pricing-table.tickets .interval{min-height:28px;line-height:28px !important;}
+    .pricing-table.tickets .pricing-column-content .nectar-button{margin-bottom:0;}
+    .pricing-table.tickets .pricing-column-content h4{padding-top:10px;}
+}
+@media(min-width:1001px){
+    .pricing-table.laybx .pricing-column h3{ padding: 12px 0 8px; }
+    .pricing-table.tickets .pricing-column-content h4{margin:0;padding:15px 0 8px!important;}
+    .pricing-table.tickets .pricing-column-content .interval{padding:5px 0;}
+    
+    .pricing-table.rv .pricing-column h3{min-height: 68px;padding: 5px 5px;font-size: 1.6em;}
+}
+/*pricing-table end*/
+
+#ajax-content-wrap .campingParallax img {width: 100%;max-width: 100%;}
+@media(max-width: 1219px){
+    .pricing-table.rv .pricing-column h3{line-height: 1em !important;font-size: 1.3em;}
+}
+@media(min-width: 2191px){
+    #page-header-wrap, #page-header-bg {height: 612.5px !important;}
+}
+@media(min-width: 3131px){
+    #page-header-wrap, #page-header-bg{height: 850px !important;}
+}
+
+/*hide top-nav & footer menu*/
+@media(min-width:1001px){
+    body #header-outer{background-color: transparent !important;position:absolute !important;}
+}
+#header-outer.transparent .header-logos{display:block;}
+#header-outer nav{display:none !important;}
+#header-outer header#top .slide-out-widget-area-toggle{display:none !important;}
+#footer-widgets{display:none;}
+#sticky-footer-html-row{display:none;}
+.ascend #footer-outer #copyright{border:none;}

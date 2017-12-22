@@ -1,0 +1,160 @@
+/**==========================================================*/
+/**====================   SALIENT PAGE  =====================*/
+/**==========================================================*/
+#lang_sel_footer a{background: #69071a !important;}
+#lang_sel_footer a.lang_sel_sel, 
+#lang_sel_footer a:hover{background-color: #e03d5a !important;}
+@media(max-width: 1000px){
+    #lang_sel_footer{top:16px;}
+}
+#header-outer.small-nav .sf-menu .sub-menu{top: 36px !important;}
+.sf-menu .menu-item a{white-space: nowrap;}
+#header-outer .header-logos{display:none;}
+
+/*section header*/
+.xui_header_section a{color:#fff;}
+#ajax-content-wrap .xui_header_section .row-bg-wrap > div.row-bg, 
+#ajax-content-wrap .xui_header_section2 .row-bg-wrap .row-bg{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd401+0,ffd401+31,f14304+100 */
+    background: #ffd401 !important; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffd900 0%,#f13e03 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffd900 0%,#f13e03 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffd900 0%,#f13e03 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd401', endColorstr='#f14304',GradientType=1 ) !important; /* IE6-9 */
+}
+
+/*mobile ui adjust*/
+@media(max-width:1000px){
+    .wpb_row.parallax_section{display:block;}
+    .wpb_row:not(.parallax_section) .divider-wrap{display:none!important;}
+    .wpb_text_column > .wpb_wrapper img{ width:100%; }
+    .text-center ul{margin-left: 15px;}
+    .text-center ul:last-child{margin-bottom:0;}
+    .text-center > .wpb_wrapper > h4{ margin-top:0 !important;}
+    #ajax-content-wrap .wpb_column.text-center{padding-bottom: 0 !important;}
+    #ajax-content-wrap .owl-carousel.mobile-gallery-carousel{margin-bottom:-1px !important;}
+}
+
+/*tickets pricing table adjust*/
+.pricing-table.tickets{margin-top:0;margin-bottom: 0;}
+.pricing-table.tickets .pricing-column-content h4{margin:0;padding:15px 0 8px!important;}
+.pricing-table.tickets .pricing-column-content .interval{padding: 5px 0 10px;min-height: 0;line-height: 1.5;}
+@media(max-width: 1000px){
+    .pricing-table.tickets{padding-bottom: 0;}
+    /*tickets pricing table adjust -- add border */
+    .pricing-table.tickets .pricing-column:last-child{margin-bottom:0 !important;}
+    .pricing-table.tickets .pricing-column h3, 
+    .pricing-table.tickets .pricing-column .pricing-column-content{border-left: 1px solid #e4e4e4!important;}
+}
+
+@media(min-width:1001px){
+    #lang_sel_footer { top: 15px !important; }
+}
+
+/* footer sticky buttons */
+@media(max-width: 1000px){
+    body{padding-bottom:50px;}
+    body.single{padding-bottom:0;}
+}
+body.single #home-sticky-footer{display:none!important;}
+#home-sticky-footer{position:fixed;top:auto;bottom:0;z-index:99999;padding:0 10px;width:100%;height:50px;background:#c03646;font-size:0;line-height:50px;text-align:center;}
+#home-sticky-footer a{position:relative;display:inline-block;box-sizing:border-box;width:100%;color:#fff;text-align:center;font-size:20px;text-transform: uppercase;}
+#home-sticky-footer a:after{position:absolute;top:50%;right:0;display:block;margin-top:-11px;width:2px;height:22px;background:#fff;content:'';}
+#home-sticky-footer a:last-child:after{display:none;}
+
+.nectar-slider-loading {display:none !important;}
+.home_slider .content h1{display:none !important;}
+.home_slider .content .buttons{margin-top:-28px;padding-left: 20px;}
+ #ajax-content-wrap  .swiper-slide{background-position:center bottom;}
+
+
+
+/**==========================================================*/
+/**====================  Footer Widget   ====================*/
+/**==========================================================*/
+/*brand&sponsors*/
+.footer-content .brand-sponsor .carousel-wrap { padding:0; }
+.footer-content .brand-sponsor .clients > div { background: #252525; }
+.carousel-outer { margin-bottom: 0 !important; }
+@media (max-width: 1001px){
+    .footer-content .brand-sponsor .carousel-wrap { padding: 25px 0; }
+}
+
+/*sponsors-section*/
+#sponsors-row .sponsors-column .wpb_wrapper {padding: 0;}
+#sponsors-row .sponsors-column .clients{text-align:center;}
+#sponsors-row .sponsors-column .clients > div{margin-bottom: 0;}
+#sponsors-row .sponsors-column .clients > div.no-link{opacity:0;}
+@media (min-width: 1001px){
+    #sponsors-row .sponsors-column .clients{ width:100%!important;text-align: center !important; }
+    #sponsors-row .sponsors-column .clients > div{width:22% !important;display: inline-block;float: none;}
+}
+@media (max-width: 1000px){
+    #sponsors-row .sponsors-column .clients > div{margin-top: 25px;}
+    #sponsors-row .sponsors-column .clients{padding-bottom: 25px;}
+    #sponsors-row .sponsors-column .clients > div{margin-left: 37%;}
+    #sponsors-row .sponsors-column .clients > div.no-link{display:none;}
+}
+@media (max-width: 690px){
+    #sponsors-row .sponsors-column .clients > div {margin-left: 25%;}
+}
+
+/*social channel*/
+#social_channel .channels a i{color: #fff !important;}
+#social_channel .channels a i:hover{ color: #b4b5dc !important;}
+.pricing-table.channels .pricing-column>h3, .pricing-table.channels .pricing-column>div{background: #252525 !important;}
+@media(max-width: 1000px) and (min-width: 690px){
+	.pricing-table > div {width:100%!important;}
+}
+
+
+
+/**==========================================================*/
+/**=======================   Home Page   ====================*/
+/**==========================================================*/
+.home_slider.swiper-slide .image-bg{background-position: center bottom !important;}
+.swiper-slide .content h2{font-size:40px;}
+
+#firstRow{z-index:99;}
+#firstRow .travel-link a{ color:#fff; }
+#firstRow .travel-link a i{ color:#fff !important; }
+#firstRow .watch-trailer-btn .nectar-button{margin-bottom:0 !important;top:0 !important;}
+#firstRow-mobile{z-index:11;}
+#firstRow-mobile .addevent-col{z-index:22;}
+.insomniac-socail-bar a i:hover{color:#c03646!important;}
+
+/*fix video background issue*/
+.container.footer-content{z-index:2}
+
+@media(min-width:1001px){
+    #gallery-hp { margin-top: -1px; }/**white line gallery**/
+}
+
+@media(max-width:1000px){
+    #nectar-slider { display:none !important; }
+    #header-image-mobile { margin-top: -15px; }
+    #header-image-mobile img { width:100%; }
+    #firstRow-mobile a.xui-mobile-button{padding: 15px 0;}
+    
+    .pp_content_container .pp_left{padding-left:0 !important;}
+    .pp_content_container .pp_right{padding-right:0 !important;}
+}
+
+
+
+/**==========================================================*/
+/**====================  Tickets Page  ======================*/
+/**==========================================================*/
+@media(min-width:1001px){  
+    .pricing-table.tickets.ga .pricing-column-content{min-height:150px;}
+    .pricing-table.tickets.vip .pricing-column-content{min-height:135px;}
+}
+
+
+
+/**==========================================================*/
+/**====================  Experience Page   ==================*/
+/**==========================================================*/
+.portfolio-items .work-item .work-info-bg{display:none;}
+.portfolio-items .work-item.style-3 img{transform: none !important;}
+.wpb_gallery{margin-bottom: 0 !important;}
