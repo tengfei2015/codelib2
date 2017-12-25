@@ -1,5 +1,5 @@
 /**==========================================================*/
-/**-----------------------------------   SALIENT PAGE   --------------------------------------------*/
+/**====================   SALIENT PAGE  =====================*/
 /**==========================================================*/
 #lang_sel_footer a{background: #69071a !important;}
 #lang_sel_footer a.lang_sel_sel, 
@@ -16,11 +16,11 @@
 #ajax-content-wrap .xui_header_section .row-bg-wrap > div.row-bg, 
 #ajax-content-wrap .xui_header_section2 .row-bg-wrap .row-bg{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd401+0,ffd401+31,f14304+100 */
-	background: #ffd401 !important; /* Old browsers */
-	background: -moz-linear-gradient(left, #ffd900 0%,#f13e03 100%) !important; /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #ffd900 0%,#f13e03 100%) !important; /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #ffd900 0%,#f13e03 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd401', endColorstr='#f14304',GradientType=1 ) !important; /* IE6-9 */
+    background: #ffd401 !important; /* Old browsers */
+    background: -moz-linear-gradient(left, #ffd900 0%,#f13e03 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffd900 0%,#f13e03 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffd900 0%,#f13e03 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd401', endColorstr='#f14304',GradientType=1 ) !important; /* IE6-9 */
 }
 
 /*mobile ui adjust*/
@@ -47,9 +47,30 @@
     .pricing-table.tickets .pricing-column .pricing-column-content{border-left: 1px solid #e4e4e4!important;}
 }
 
+@media(min-width:1001px){
+    #lang_sel_footer { top: 15px !important; }
+}
+
+/* footer sticky buttons */
+@media(max-width: 1000px){
+    body{padding-bottom:50px;}
+    body.single{padding-bottom:0;}
+}
+body.single #home-sticky-footer{display:none!important;}
+#home-sticky-footer{position:fixed;top:auto;bottom:0;z-index:99999;padding:0 10px;width:100%;height:50px;background:#c03646;font-size:0;line-height:50px;text-align:center;}
+#home-sticky-footer a{position:relative;display:inline-block;box-sizing:border-box;width:100%;color:#fff;text-align:center;font-size:20px;text-transform: uppercase;}
+#home-sticky-footer a:after{position:absolute;top:50%;right:0;display:block;margin-top:-11px;width:2px;height:22px;background:#fff;content:'';}
+#home-sticky-footer a:last-child:after{display:none;}
+
+.nectar-slider-loading {display:none !important;}
+.home_slider .content h1{display:none !important;}
+.home_slider .content .buttons{margin-top:-28px;padding-left: 20px;}
+ #ajax-content-wrap  .swiper-slide{background-position:center bottom;}
+
+
 
 /**==========================================================*/
-/**-----------------------------------   Footer Widget   ---------------------------------- ----------*/
+/**====================  Footer Widget   ====================*/
 /**==========================================================*/
 /*brand&sponsors*/
 .footer-content .brand-sponsor .carousel-wrap { padding:0; }
@@ -89,7 +110,7 @@
 
 
 /**==========================================================*/
-/**-----------------------------------   Home Page   ------------------------------------------------*/
+/**=======================   Home Page   ====================*/
 /**==========================================================*/
 .home_slider.swiper-slide .image-bg{background-position: center bottom !important;}
 .swiper-slide .content h2{font-size:40px;}
@@ -120,8 +141,9 @@
 }
 
 
+
 /**==========================================================*/
-/**-----------------------------------  Tickets Page   ------------------------------------------------*/
+/**====================  Tickets Page  ======================*/
 /**==========================================================*/
 @media(min-width:1001px){  
     .pricing-table.tickets.ga .pricing-column-content{min-height:150px;}
@@ -131,16 +153,8 @@
 
 
 /**==========================================================*/
-/**-----------------------------------  Experience Page   ------------------------------------------*/
+/**====================  Experience Page   ==================*/
 /**==========================================================*/
 .portfolio-items .work-item .work-info-bg{display:none;}
 .portfolio-items .work-item.style-3 img{transform: none !important;}
 .wpb_gallery{margin-bottom: 0 !important;}
-
-
-
-
-
-
-
-
